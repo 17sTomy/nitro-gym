@@ -1,0 +1,1018 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.actual{
+    text-decoration: underline;
+}
+
+body{
+    background-color: rgb(6, 6, 6);
+    color: rgb(218, 218, 218);
+}
+
+header{
+    display: flex;
+}
+
+.titulo_container{
+    margin: 0 auto;
+    align-self: center;
+}
+
+.titulo{
+    text-transform: uppercase;
+    font-size: 7rem;
+}
+
+.no-index{
+    margin-top: 100px;
+}
+
+/***************************************NAV***************************************/
+
+.logo{
+    height: 10rem;
+}
+
+nav{
+   background-color: rgb(243, 76, 56, .8); 
+   height: 90px;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   z-index: 2;
+}
+
+
+.navContent{
+    width: 90%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding: .9rem;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: rgba(0,0,0,.9);
+    transition: all 0.5s;
+}
+
+header{
+    height: 600px;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: headerAnimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+/***************************************INDEX***************************************/
+
+h1{
+    font-size: 5rem;
+    text-transform: uppercase;
+    padding: 3rem 1rem .8rem;
+    text-align: center;
+}
+
+.frase{
+    font-size: 1.8rem;
+    color: rgb(243, 76, 56);
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    height: 4.5rem;
+    background-color: rgba(243, 76, 56, 0.7);
+    border-radius: 10px;
+    padding:0 1rem 1rem;
+    font-size: 2.5rem;
+    margin: 1rem 0 2rem 0;
+    border: none;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    box-shadow: 0 10px 50px 1px rgba(243,76,56,.9);
+}
+
+
+.quienesSomos{
+    background-color: rgb(6, 6, 6);
+    text-align: center;
+    margin: auto;
+    width: 85%;
+}
+
+.descripcion{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.descripcion p{
+    padding-bottom: 2rem;
+    font-size: 1.7rem;
+}
+
+.descripcion p a{
+    font-size: 1.7rem;
+    color: rgb(243, 76, 56);
+    text-decoration: none;
+}
+
+h2{
+    font-size: 4rem;
+    margin-top: 3rem;
+    padding: 3rem 0 .8rem;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-auto-rows: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+} 
+
+.img_container:nth-of-type(1){
+    grid-column: span 4;
+    grid-row: span 1;
+}
+.img_container:nth-of-type(2){
+    grid-column: span 3;
+}
+.img_container:nth-of-type(3){
+    grid-column: span 7;
+}
+.img_container:nth-of-type(4){
+    grid-column: span 7;
+}
+.img_container:nth-of-type(5){
+    grid-column: span 7;
+}
+.img_container:nth-of-type(6){
+    grid-column: span 3;
+    grid-row: span 1;
+}
+.img_container:nth-of-type(7){
+    grid-column: span 4;
+}
+.img_container:nth-of-type(8){
+    grid-column: span 7;
+}
+.img_container:nth-of-type(9){
+    grid-column: span 4;
+}
+.img_container:nth-of-type(10){
+    grid-column: span 5;
+}
+.img_container:nth-of-type(11){
+    grid-column: span 5;
+}
+
+.img_container img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: .2s;
+}
+
+.img_container img:hover{
+    filter: opacity(0.9);
+    transform: scale(0.9);
+    box-shadow: 0px 0px 8px 0px rgba(243, 76, 56);
+    cursor: pointer;
+}
+
+.nuestrosEntrenadores{
+    background-color: rgb(10,10,10);
+    text-align: center;
+}
+
+.entrenadores{
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+}
+
+.nuestrosEntrenadores h2{
+    font-size: 4rem;
+    padding: 3rem 0 .8rem;
+}
+
+.entrenadores h4{
+    padding: 3rem 0;
+    font-size: 1.8rem;
+}
+
+.entrenadores img{
+    width: 300px;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(243, 76, 56);
+}
+
+.btn a{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font-weight: bold;
+}
+
+/***************************************PROGRAMAS***************************************/
+
+.programas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.programa{
+    width: 60%;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 3rem;
+    border: 1px solid rgb(243, 76, 56);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.programa-img{
+    width: 35%;
+    height: 100%;
+    transition: all .5s;
+    z-index: 1;
+}
+
+.programa-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(80%);
+}
+
+.programa h2{
+    padding: 4rem 0 0rem 2rem;
+}
+
+.programa:hover{
+    box-shadow: 0px 0px 8px 0px rgba(243, 76, 56);
+    background-color: rgb(10,10,10);
+    color: rgb(243, 76, 56);
+    transform: scale(0.94);
+}
+
+.programa:hover img{
+    filter: grayscale(0%);
+}
+
+/***************************************MEMBRESIAS***************************************/
+
+.membresias{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 250px;
+    height: 470px;
+    border-radius: 10px;
+    border: 1px solid rgb(243, 76, 56);
+    overflow: hidden;
+    transition: all .2s;
+    margin: 2rem;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    height: 40px;
+    color: rgb(0,0,0);
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.priceContainer{
+    height: 27%;
+    font-size: 5rem;
+    padding-top: 18px;
+    background-color: rgb(10,10,10);
+    color: rgb(229, 228, 226);
+    text-align: center;
+}
+
+.incluye{
+    font-size: 1.8rem;
+    padding: 2rem 0 2rem;
+    text-align: center;
+}
+
+.beneficios{
+    height: 16rem;
+}
+
+.beneficios li{
+    font-size: 1.5rem;
+    padding: 0 1rem .5rem 1rem;
+    list-style: none;
+}
+
+.btnPlan{
+    text-align: center;
+    padding: 1rem 0;
+    height: 100px;
+}
+
+.btnPlan button{
+    height: 50px;
+    width: 80%;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    transition: all .2s;
+}
+
+.btnPlan button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(10,10,10);
+    font-weight: bold;
+}
+
+.platinum-border{
+    border: 1px solid rgb(0, 148, 113);
+}
+.platinum{
+    background-color: rgb(0, 148, 113);
+}
+.btnPlan .platinum:hover{
+    transform: scale(1.1);
+}
+
+.gold-border{
+    border: 1px solid rgb(255, 215, 0);
+}
+.gold{
+    background-color: rgb(255, 215, 0);
+}
+.btnPlan .gold:hover{
+    transform: scale(1.1);
+}
+
+.silver-border{
+    border: 1px solid rgb(192, 192, 192);
+}
+.silver{
+    background-color: rgb(192, 192, 192);
+}
+.btnPlan .silver:hover{
+    transform: scale(1.1);
+}
+
+.bronze-border{
+    border: 1px solid rgb(205, 127, 50);
+}
+.bronze{
+    background-color: rgb(205, 127, 50);
+}
+.btnPlan .bronze:hover{
+    transform: scale(1.1);
+}
+
+/***************************************TESTIMONIOS***************************************/
+
+.testimonios{
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 46%);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 80px;
+}
+
+.testimonio-caja{
+    background-color: rgb(10,10,10);
+    color: rgb(218, 218, 218);
+    font-size: 5rem;
+    padding: 2rem;
+    margin: 15px;
+    transition: all .2s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.testimonio-caja:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 0px 8px 0px rgba(243, 76, 56);
+}
+
+.perfil-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.name-user{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.name-user strong{
+    font-size: 2.1rem;
+}
+
+.resenia{
+    color: rgb(255, 215, 0);
+    font-size: 2.1rem;
+}
+
+.caja-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+/***************************************CONTACTO***************************************/
+
+form{
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input, select{
+    font-size: 2rem;
+    border: none;
+    border-bottom: 1px solid rgb(243, 76, 56);
+    outline: none;
+    background:none;
+    color: rgb(243, 76, 56);
+    padding: 10px;
+    width: 45%;
+    margin: 3rem;
+    padding: 2rem 1.5rem;
+}
+
+textarea{
+    margin: 3rem auto;
+    padding: 2.5rem 1.5rem;
+    min-width: 96%;
+    min-height: 100px;
+    max-height: 300px;
+    background: none;
+    font-size: 2rem;
+    border: none;
+    border-bottom: 1px solid rgb(243, 76, 56);
+    outline: none;
+    color: rgb(243, 76, 56);
+}
+
+input:focus, textarea:focus, select:focus{
+    border-bottom: 3px solid rgb(243, 76, 56);
+}
+
+.botones{
+    margin: auto;
+}
+
+.formBtn{
+    background-color: rgba(243, 76, 56, 0.7);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem 0;
+    border: none;
+    transition: all .5s;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.formBtn:hover{
+    box-shadow: 0 10px 50px 1px rgba(243,76,56,.9);
+}
+
+.ubicacion{
+    margin: 4rem auto 1rem;
+    text-align: center;
+    width: 96%;
+}
+
+.ubicacion iframe{
+    width: 100%;
+    height: 400px;
+}
+
+
+/***************************************FOOTER***************************************/
+
+footer{
+    background-color: rgb(243, 76, 56); 
+    margin-top: 2rem;
+}
+
+footer ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li{
+    padding: 2.5rem;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding: 1rem;
+    font-size: 4.5rem;
+    margin: 0 auto;
+}
+
+/***************************************RESPONSIVE***************************************/
+
+@media screen and (max-width: 480px){
+    /**********Index**********/
+    h1{
+        font-size: 4.2rem;
+    }
+
+    nav{
+        flex-direction: column;
+        height: 120px;
+    }
+
+    nav ul li a{
+        font-size: 1.3rem;
+    }
+
+    .titulo{
+        font-size: 5.5rem;
+    }
+
+    .navContent{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo{
+        margin-top: 50px;
+    }
+
+    .frase{
+        margin: 0 1rem;
+    }
+
+    .entrenadores img{
+        width: 250px;
+    }
+
+    .img_container:nth-of-type(1){
+        grid-column: span 14;
+        grid-row: span 2;
+    }
+    .img_container:nth-of-type(2){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(3){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(4){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(5){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(6){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(7){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(8){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(9){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(10){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(11){
+        grid-column: span 7;
+    }
+    
+    .img_container img{
+        height: 200px;
+    }
+
+    /**********Programas**********/
+    .programa{
+        flex-direction: column;
+        width: 90%;
+        height: 300px;
+    }
+    .programa:nth-of-type(1){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("img/weight-lifting.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+    .programa:nth-of-type(2){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("img/powerlifting.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+    .programa:nth-of-type(3){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("img/crossfit.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+    .programa:nth-of-type(4){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("img/funcional.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+
+    .programa h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-top: 0;
+        padding: 2rem 0;
+        color: rgb(218, 218, 218);
+    }
+
+    .programa-img {
+        width: 100%;
+        height: 300px;
+        padding-top: 2.5rem;
+        display: none;
+    }
+
+    .programa-img img{
+        filter: grayscale(0%);
+        width: 100%;
+    }
+
+    .programa-h2{
+        width: 100%;
+        height: 20%;
+        margin: 0 auto;
+    } 
+
+    /**********Testimonios**********/
+    .testimonios{
+        grid-template-columns: 90%;
+    }
+
+    .testimonio-caja{
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .name-user strong{
+        font-size: 1.5rem;
+    }
+
+    .resenia{
+        font-size: 1.8rem;
+    }
+
+    .comentario-user{
+        font-size: 2.5rem;
+    }
+
+    /**********Contacto**********/
+    input, select{
+        width: 90%;
+        font-size: 1.7rem;
+    }
+    textarea{
+        font-size: 1.7rem;
+    }
+
+    /**********Footer**********/
+    footer ul li a{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 722px){
+    /**********Index**********/
+    h1{
+        font-size: 4.2rem;
+    }
+
+    nav{
+        flex-direction: column;
+        height: 120px;
+    }
+
+    nav ul li a{
+        font-size: 1.6rem;
+    }
+
+    .navContent{
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .logo{
+        margin-top: 50px;
+    }
+
+    .img_container:nth-of-type(1){
+        grid-column: span 14;
+        grid-row: span 2;
+    }
+    .img_container:nth-of-type(2){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(3){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(4){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(5){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(6){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(7){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(8){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(9){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(10){
+        grid-column: span 7;
+    }
+    .img_container:nth-of-type(11){
+        grid-column: span 7;
+    }
+    
+    .img_container img{
+        height: 230px;
+    }
+
+    /**********Programas**********/
+    .programa{
+        flex-direction: column;
+        width: 90%;
+        height: 300px;
+    }
+    .programa:nth-of-type(1){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("img/weight-lifting.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+    .programa:nth-of-type(2){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("img/powerlifting.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+    .programa:nth-of-type(3){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("img/crossfit.jpg");
+        background-attachment: center;
+        background-size:cover;
+    }
+    .programa:nth-of-type(4){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("img/funcional.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+
+    .programa h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-top: 0;
+        padding: 2rem 0;
+        color: rgb(192, 192, 192);
+    }
+
+    .programa-img {
+        display: none;
+    } 
+
+    .programa-h2 h2{
+        height: 20%;
+        margin: 0 auto;
+    } 
+
+    /**********Testimonios**********/
+    .testimonios{
+        grid-template-columns: 90%;
+    }
+
+    .testimonio-caja{
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .name-user strong{
+        font-size: 1.8rem;
+    }
+
+    .resenia{
+        font-size: 1.8rem;
+    }
+
+    .comentario-user{
+        font-size: 2.6rem;
+    }
+
+    /**********Contacto**********/
+    input, select{
+        width: 90%;
+        font-size: 1.8rem;
+    }
+    textarea{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (min-width: 723px) and (max-width: 1023px){
+   /**********Programas**********/ 
+   .programa{
+    width: 80%;
+   }
+   .programa-img{
+    width: 40%;
+   }
+
+    /**********Membresías**********/
+    .membresias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card{
+        margin: 2rem auto;
+        width: 300px;
+    }
+
+        /**********Testimonios**********/
+        .testimonios{
+            grid-template-columns: 90%;
+        }
+    
+        .testimonio-caja{
+            width: 100%;
+            margin: 1rem auto;
+        }
+    
+        .name-user strong{
+            font-size: 2rem;
+        }
+    
+        .resenia{
+            font-size: 2rem;
+        }
+    
+        .comentario-user{
+            font-size: 3rem;
+        }
+    
+        /**********Contacto**********/
+        input, select{
+            width: 90%;
+            font-size: 2rem;
+        }
+        textarea{
+            font-size: 2rem;
+        }
+    
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px){
+    /**********Programas**********/ 
+   .programa{
+    width: 80%;
+   }
+   .programa-img{
+    width: 40%;
+   }
+
+    /**********Membresías**********/
+    .membresias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+
+    .card{
+        margin: 2rem auto;
+        width: 400px;
+    } 
+
+    /**********Testimonios**********/
+    .testimonios{
+        grid-template-columns: 90%;
+    }
+    
+    .testimonio-caja{
+        width: 100%;
+        margin: 1rem auto;
+    }
+    
+    .name-user strong{
+        font-size: 2.1rem;
+    }
+    
+    .resenia{
+        font-size: 2.1rem;
+    }
+    
+    .comentario-user{
+        font-size: 3.2rem;
+    }
+    
+    /**********Contacto**********/
+    input, select{
+        width: 90%;
+        font-size: 2rem;
+    }
+    textarea{
+        font-size: 2rem;
+    }
+}
+
+/***************************************KEYFRAMES***************************************/
+
+@keyframes headerAnimation{
+    0%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("img/header.jpg"); background-position: center; background-size: cover;}
+    25%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("img/header2.jpg"); background-position: center; background-size: cover;}
+    50%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("img/header3.jpg"); background-position: center; background-size: cover;}
+    75%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("img/header4.jpg"); background-position: center; background-size: cover;}
+    100%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("img/header5.jpg"); background-position: center; background-size: cover;}
+}
