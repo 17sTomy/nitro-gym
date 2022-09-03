@@ -43,7 +43,7 @@
 
     <nav class="navbar navbar-expand-lg sticky-top bg-orange">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../index.html">
             <img class="logo" src="../img/logo.png" alt="logo de la empresa">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
               </li>
-              
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html">Tienda</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -75,15 +77,15 @@
     <main>
         <h1>Contáctate y únete a nosotros</h1>
         <p class="frase">Déjanos ayudarlo a poder cumplir sus objetivos.</p>
-        <form action="">
+        <form action="" class="form">
       
-              <input id="nombre" type="text" name="first_name" placeholder="Nombre..." autocomplete="off">
+              <input id="nombre" type="text" name="first_name" placeholder="Nombre..." autocomplete="off" class="input">
 
-              <input id="email" type="email" name="email" required placeholder="Correo electrónico..." autocomplete="off">
+              <input id="email" type="email" name="email" required placeholder="Correo electrónico..." autocomplete="off" class="input">
 
-              <input id="tel" type="tel" name="phone" placeholder="Teléfono..." autocomplete="off">
+              <input id="tel" type="tel" name="phone" placeholder="Teléfono..." autocomplete="off" class="input">
             
-              <select>
+              <select class="select">
                 <option>Seleccione su país</option>
                 <option>Argentina</option>
                 <option>Perú</option>
@@ -92,7 +94,7 @@
                 <option>Brazil</option>
               </select>
 
-              <textarea placeholder="Deje su mensaje..."></textarea>
+              <textarea placeholder="Deje su mensaje..." class="textarea"></textarea>
             
               <div class="botones">
                 <button class="formBtn">Enviar</button>
