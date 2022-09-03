@@ -37,13 +37,17 @@ header{
     margin-top: 100px;
 }
 
+.bg-orange{
+    background-color: rgba(243,76,56,.9);
+}
+
 /***************************************NAV***************************************/
 
 .logo{
     height: 10rem;
 }
 
-nav{
+/* nav{
    background-color: rgb(243, 76, 56, .8); 
    height: 90px;
    position: fixed;
@@ -52,36 +56,53 @@ nav{
    display: flex;
    align-items: center;
    z-index: 2;
+} */
+
+
+.nav-link{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+nav button{
+    height: 3rem;
+    width: 6rem;
+    color: rgb(0,0,0);
+    margin-right: 2rem;
 }
 
 
-.navContent{
+/* .navContent{
     width: 90%;
     height: 50px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
+} */
+/* 
 nav ul{
     display: flex;
     list-style-type: none;
-}
+} */
 
-nav ul li a{
+/* nav ul li a{
     text-decoration: none;
     color: rgb(0,0,0);
     padding: .9rem;
     font-weight: 500;
     font-size: 1.7rem;
+} */
+
+.nav-link{
+    color: rgb(0,0,0);
 }
 
-nav ul li a:hover{
+/* nav ul li a:hover{
     text-decoration: underline;
     color: rgba(0,0,0,.9);
     transition: all 0.5s;
-}
+} */
 
 header{
     height: 600px;
@@ -123,6 +144,7 @@ h1{
 
 .btn:hover{
     box-shadow: 0 10px 50px 1px rgba(243,76,56,.9);
+    background-color: rgba(243, 76, 56, 0.5);
 }
 
 
@@ -137,7 +159,7 @@ h1{
     width: 90%;
     margin: auto;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .descripcion p{
@@ -153,7 +175,7 @@ h1{
 
 h2{
     font-size: 4rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding: 3rem 0 .8rem;
 }
 
@@ -221,14 +243,14 @@ h2{
     text-align: center;
 }
 
-.entrenadores{
+/* .entrenadores{
     height: auto;
     text-align: center;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding-top: 3rem;
-}
+} */
 
 .nuestrosEntrenadores h2{
     font-size: 4rem;
@@ -240,18 +262,58 @@ h2{
     font-size: 1.8rem;
 }
 
-.entrenadores img{
+/* .entrenadores img{
     width: 300px;
     margin: 1rem;
     border-radius: 20px;
     box-shadow: 0px 0px 8px 0px rgba(243, 76, 56);
-}
+} */
 
 .btn a{
     text-decoration: none;
     color: rgb(0,0,0);
     font-weight: bold;
 }
+
+.container{
+    margin-top: 2rem;
+    height: 500px;
+    overflow: hidden;
+}
+
+.carousel-inner{
+    margin: auto;
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+    width: 705px;
+    margin: 0 auto;
+}
+
+.carousel-second{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("../img/weight-lifting.jpg");
+    background-attachment: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-third{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("../img/weight-lifting.jpg");
+    background-attachment: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carousel-first{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("../img/weight-lifting.jpg");
+    background-attachment: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 /***************************************PROGRAMAS***************************************/
 
@@ -315,17 +377,18 @@ h2{
     flex-wrap: wrap;
 }
 
-.card{
-    width: 250px;
+.cardd{
+    width: 260px;
     height: 470px;
     border-radius: 10px;
     border: 1px solid rgb(243, 76, 56);
     overflow: hidden;
     transition: all .2s;
     margin: 2rem;
+    background-color: rgb(0,0,0);
 }
 
-.card:hover{
+.cardd:hover{
     transform: scale(1.1);
 }
 
@@ -336,6 +399,7 @@ h2{
     color: rgb(0,0,0);
     padding-top: 1rem;
     text-align: center;
+    margin: 0;
 }
 
 .priceContainer{
@@ -345,11 +409,12 @@ h2{
     background-color: rgb(10,10,10);
     color: rgb(229, 228, 226);
     text-align: center;
+    margin-top: 0;
 }
 
 .incluye{
     font-size: 1.8rem;
-    padding: 2rem 0 2rem;
+    padding: 1rem 0 1rem;
     text-align: center;
 }
 
@@ -359,7 +424,6 @@ h2{
 
 .beneficios li{
     font-size: 1.5rem;
-    padding: 0 1rem .5rem 1rem;
     list-style: none;
 }
 
@@ -377,6 +441,7 @@ h2{
     border-radius: 10px;
     border: none;
     transition: all .2s;
+    margin-bottom: 0;
 }
 
 .btnPlan button a{
@@ -493,6 +558,10 @@ h2{
     justify-content: space-between;
 }
 
+
+
+
+
 /***************************************CONTACTO***************************************/
 
 form{
@@ -571,6 +640,7 @@ input:focus, textarea:focus, select:focus{
 footer{
     background-color: rgb(243, 76, 56); 
     margin-top: 2rem;
+    height: 120px;
 }
 
 footer ul{
@@ -590,6 +660,19 @@ footer ul li a{
     padding: 1rem;
     font-size: 4.5rem;
     margin: 0 auto;
+    transition: .1s;
+}
+
+footer ul li a:hover{
+    color: rgb(10,10,10,.9);
+}
+
+.carousel-item{
+    width: 30%;
+}
+
+.carousel-item img{
+    width: 100%;
 }
 
 /***************************************RESPONSIVE***************************************/
@@ -600,7 +683,10 @@ footer ul li a{
         font-size: 4.2rem;
     }
 
-    nav{
+    .titulo{
+        font-size: 5.5rem;
+    }
+    /* nav{
         flex-direction: column;
         height: 120px;
     }
@@ -609,9 +695,6 @@ footer ul li a{
         font-size: 1.3rem;
     }
 
-    .titulo{
-        font-size: 5.5rem;
-    }
 
     .navContent{
         flex-direction: column;
@@ -621,7 +704,7 @@ footer ul li a{
 
     .logo{
         margin-top: 50px;
-    }
+    } */
 
     .frase{
         margin: 0 1rem;
@@ -766,7 +849,7 @@ footer ul li a{
         font-size: 4.2rem;
     }
 
-    nav{
+    /* nav{
         flex-direction: column;
         height: 120px;
     }
@@ -783,7 +866,7 @@ footer ul li a{
 
     .logo{
         margin-top: 50px;
-    }
+    } */
 
     .img_container:nth-of-type(1){
         grid-column: span 14;
@@ -1005,6 +1088,10 @@ footer ul li a{
     textarea{
         font-size: 2rem;
     }
+}
+
+@media screen and (max-width: 991px){
+
 }
 
 /***************************************KEYFRAMES***************************************/
