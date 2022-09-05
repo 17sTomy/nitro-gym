@@ -536,7 +536,6 @@ h2{
 /***************************************CONTACTO***************************************/
 
 .form{
-    border-radius: 10px;
     margin: 0 auto;
     padding: 2rem;
     display: flex;
@@ -547,6 +546,7 @@ h2{
     font-size: 2rem;
     border: none;
     border-bottom: 1px solid rgb(243, 76, 56);
+    border-radius: 0;
     outline: none;
     background:none;
     color: rgb(243, 76, 56);
