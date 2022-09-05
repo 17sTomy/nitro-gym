@@ -557,6 +557,7 @@ h2{
 }
 
 .textarea{
+    border-radius: 0;
     margin: 3rem auto;
     padding: 2.5rem 1.5rem;
     min-width: 96%;
