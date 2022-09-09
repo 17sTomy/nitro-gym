@@ -103,9 +103,8 @@ h1{
 
 .btn:hover{
     box-shadow: 0 10px 50px 1px rgba(243,76,56,.9);
-    background-color: rgba(243, 76, 56, 0.5);
+    background-color: rgba(243, 76, 56, 0.9);
 }
-
 
 .quienesSomos{
     background-color: rgb(6, 6, 6);
