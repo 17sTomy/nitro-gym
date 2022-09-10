@@ -35,11 +35,15 @@ h1 {
 
 p {
   color: rgb(255, 255, 255);
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 .bg-orange {
   background-color: rgba(243, 76, 56, 0.9);
+}
+
+.hamb-btn {
+  font-size: 1.9rem;
 }
 
 nav button {
@@ -97,10 +101,10 @@ header {
   padding-bottom: 3rem;
 }
 .descripcion p {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 .descripcion p a {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   color: rgb(243, 76, 56);
   text-decoration: none;
 }
@@ -210,7 +214,7 @@ h2 {
 
 .entrenadores h4 {
   padding: 3rem 0;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 
 .container {
@@ -297,15 +301,26 @@ h2 {
 @media screen and (max-width: 480px) {
   /**********Index**********/
   h1 {
-    font-size: 4.2rem;
+    font-size: 4.3rem;
     margin: 0 1rem;
   }
+  h2 {
+    font-size: 4.3rem;
+  }
   .titulo {
-    font-size: 5.5rem;
+    font-size: 6rem;
   }
   .frase {
     margin: 0 1.5rem;
+    font-size: 2rem;
+  }
+  .descripcion p {
     font-size: 1.8rem;
+  }
+  .descripcion p a {
+    font-size: 1.8rem;
+    color: rgb(243, 76, 56);
+    text-decoration: none;
   }
   .entrenadores img {
     width: 250px;
@@ -434,9 +449,6 @@ h2 {
 }
 @media screen and (min-width: 481px) and (max-width: 722px) {
   /**********Index**********/
-  h1 {
-    font-size: 4.2rem;
-  }
   .img_container:nth-of-type(1) {
     grid-column: span 12;
     grid-row: span 2;
