@@ -1,0 +1,21 @@
+.bg-orange{
+    background-color: $mainColorTransparentNav;
+}
+
+nav button{
+    height: 3rem;
+    width: 6rem;
+    color: $secondaryColorDark;
+    margin-right: 2rem;
+}
+
+.logo{
+    height: 10rem;
+}
+
+.nav-link{
+    font-size: $textMd;
+    margin-left: 1rem;
+    color: $secondaryColorDark;
+}
+

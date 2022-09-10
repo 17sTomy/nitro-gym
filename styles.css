@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
-
 *{
     padding: 0;
     margin: 0;
@@ -242,7 +241,6 @@ h2{
 .carousel-item p{
     font-size: 2rem;
 }
-
 
 /***************************************PROGRAMAS***************************************/
 

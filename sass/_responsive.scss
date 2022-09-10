@@ -1,0 +1,441 @@
+@media screen and (max-width: 480px){
+    /**********Index**********/
+    h1{
+        font-size: 4.2rem;
+        margin: 0 1rem;
+    }
+
+    .titulo{
+        font-size: 5.5rem;
+    }
+
+    .frase{
+        margin: 0 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    .entrenadores img{
+        width: 250px;
+    }
+
+    .img_container:nth-of-type(1){
+        grid-column: span 12;
+        grid-row: span 2;
+    }
+    .img_container:nth-of-type(2){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(3){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(4){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(5){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(6){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(7){
+        grid-column: span 12;
+    }
+    .img_container:nth-of-type(8){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(9){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(10){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(11){
+        grid-column: span 12;
+    }
+    
+    .img_container img{
+        height: 200px;
+    }
+
+    /**********Programas**********/
+    .programa{
+        flex-direction: column;
+        width: 90%;
+        height: 300px;
+    }
+    .programa:nth-of-type(1){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("img/weight-lifting.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+    .programa:nth-of-type(2){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("img/powerlifting.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+    .programa:nth-of-type(3){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("img/crossfit.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+    .programa:nth-of-type(4){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("img/funcional.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+
+    .programa h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-top: 0;
+        padding: 2rem 0;
+        color: rgb(218, 218, 218);
+    }
+
+    .programa-img {
+        width: 100%;
+        height: 300px;
+        padding-top: 2.5rem;
+        display: none;
+    }
+
+    .programa-img img{
+        filter: grayscale(0%);
+        width: 100%;
+    }
+
+    .programa-h2{
+        width: 100%;
+        height: 20%;
+        margin: 0 auto;
+    } 
+
+    /**********Testimonios**********/
+    .testimonios{
+        grid-template-columns: 90%;
+    }
+
+    .testimonio-caja{
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .name-user strong{
+        font-size: 1.5rem;
+    }
+
+    .resenia{
+        font-size: 1.8rem;
+    }
+
+    .comentario-user{
+        font-size: 2.5rem;
+    }
+
+    /**********Contacto**********/
+    .input, .select{
+        width: 90%;
+        font-size: 1.7rem;
+    }
+    .textarea{
+        font-size: 1.7rem;
+    }
+
+    /**********Tienda**********/
+    .form-shop label{
+        font-size: 2rem;
+    }
+    .form-shop a{
+        font-size: 2rem;
+    }
+    /**********Footer**********/
+    footer ul li a{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 722px){
+    /**********Index**********/
+    h1{
+        font-size: 4.2rem;
+    }
+
+    .img_container:nth-of-type(1){
+        grid-column: span 12;
+        grid-row: span 2;
+    }
+    .img_container:nth-of-type(2){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(3){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(4){
+        grid-column: span 12;
+    }
+    .img_container:nth-of-type(5){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(6){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(7){
+        grid-column: span 12;
+    }
+    .img_container:nth-of-type(8){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(9){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(10){
+        grid-column: span 6;
+    }
+    .img_container:nth-of-type(11){
+        grid-column: span 6;
+    }
+    
+    .img_container img{
+        height: 230px;
+    }
+
+    /**********Programas**********/
+    .programa{
+        flex-direction: column;
+        width: 90%;
+        height: 300px;
+    }
+    .programa:nth-of-type(1){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("img/weight-lifting.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+    .programa:nth-of-type(2){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("img/powerlifting.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+    .programa:nth-of-type(3){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("img/crossfit.jpg");
+        background-attachment: center;
+        background-size:cover;
+    }
+    .programa:nth-of-type(4){
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("img/funcional.jpg");
+        background-attachment: center;
+        background-size: cover;
+    }
+
+    .programa h2{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-top: 0;
+        padding: 2rem 0;
+        color: rgb(192, 192, 192);
+    }
+
+    .programa-img {
+        display: none;
+    } 
+
+    .programa-h2 h2{
+        height: 20%;
+        margin: 0 auto;
+    } 
+
+    /**********Testimonios**********/
+    .testimonios{
+        grid-template-columns: 90%;
+    }
+
+    .testimonio-caja{
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .name-user strong{
+        font-size: 1.8rem;
+    }
+
+    .resenia{
+        font-size: 1.8rem;
+    }
+
+    .comentario-user{
+        font-size: 2.6rem;
+    }
+
+    /**********Contacto**********/
+    .input, .select{
+        width: 90%;
+        font-size: 1.8rem;
+    }
+    .textarea{
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (min-width: 723px) and (max-width: 1023px){
+   /**********Programas**********/ 
+   .programa{
+    width: 80%;
+   }
+   .programa-img{
+    width: 40%;
+   }
+
+    /**********Membresías**********/
+    .membresias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem auto;
+
+    }
+
+    .cardd{
+        margin: 2rem auto;
+        width: 300px;
+    }
+
+        /**********Testimonios**********/
+        .testimonios{
+            grid-template-columns: 90%;
+        }
+    
+        .testimonio-caja{
+            width: 100%;
+            margin: 1rem auto;
+        }
+    
+        .name-user strong{
+            font-size: 2rem;
+        }
+    
+        .resenia{
+            font-size: 2rem;
+        }
+    
+        .comentario-user{
+            font-size: 3rem;
+        }
+    
+        /**********Contacto**********/
+        .input, .select{
+            width: 90%;
+            font-size: 2rem;
+        }
+        .textarea{
+            font-size: 2rem;
+        }
+    
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px){
+    /**********Programas**********/ 
+   .programa{
+    width: 80%;
+   }
+   .programa-img{
+    width: 40%;
+   }
+
+    /**********Membresías**********/
+    .membresias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+
+    .cardd{
+        margin: 2rem auto;
+        width: 400px;
+    } 
+
+    /**********Testimonios**********/
+    .testimonios{
+        grid-template-columns: 90%;
+    }
+    
+    .testimonio-caja{
+        width: 100%;
+        margin: 1rem auto;
+    }
+    
+    .name-user strong{
+        font-size: 2.1rem;
+    }
+    
+    .resenia{
+        font-size: 2.1rem;
+    }
+    
+    .comentario-user{
+        font-size: 3.2rem;
+    }
+    
+    /**********Contacto**********/
+    .input, .select{
+        width: 90%;
+        font-size: 2rem;
+    }
+    .textarea{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .container{
+        margin-top: 2rem;
+        height: 650px;
+        overflow: hidden;
+    }
+    
+    .carousel-inner{
+        height: 600px;
+        width: 100%;
+    }
+    
+    .carousel-item{
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .carousel-item img{
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .carousel-item h3{
+        font-size: 3rem;
+    }
+    .carousel-item p{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .container{
+        margin-top: 2rem;
+        height: 600px;
+        overflow: hidden;
+    }
+    
+    .carousel-inner{
+        height: 500px;
+        width: 100%;
+    }
+    
+    .carousel-item{
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .carousel-item img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        height: 50vh;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+//Colors
+$mainColor: rgb(243, 76, 56);
+$mainColorTransparentNav: rgba(243, 76, 56, .9);
+$mainColorTransparentBtn: rgba(243, 76, 56, .6);
+$secondaryColorDark: rgb(5, 5, 5);
+$secondaryColorLight: rgb(10, 10, 10);
+$secondaryColorLightTransparent: rgba(10, 10, 10, .9);
+$fontColor: rgb(255, 255, 255);
+
+//Fonts
+$mainFont: 'Roboto', sans-serif;
+$secondaryFont: 'Figtree', sans-serif;
+
+//Sizing
+$textXl: 7rem;
+$textLg: 5rem;
+$textLg2: 3rem;
+$textMd: 2rem;
+$textSm: 1.8rem;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $secondaryColorDark;
+    color: $fontColor;
+}
+
+.no-index{
+    margin-top: 100px;
+}
+
+h1{
+    font-size: $textLg;
+    color: $fontColor;
+    text-transform: uppercase;
+    padding: 3rem 1rem .8rem;
+    text-align: center;
+    font-family: $mainFont;
+}
+
+.frase{
+    color: $mainColor;
+    font-size: $textMd;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+p{
+    color: $fontColor;
+    font-size: $textSm;
+}
+

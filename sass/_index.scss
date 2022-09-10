@@ -1,0 +1,174 @@
+header{
+    display: flex;
+    height: 90vh;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: headerAnimation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.titulo_container{
+    margin: 0 auto;
+    align-self: center;
+}
+
+.titulo{
+    text-transform: uppercase;
+    font-size: $textXl;
+}
+
+.quienesSomos{
+    background-color: $secondaryColorDark;
+    text-align: center;
+    margin: auto;
+    width: 85%;
+}
+
+.descripcion{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 3rem;
+    p{
+        font-size: $textSm;
+        a{
+            font-size: $textSm;
+            color: $mainColor;
+            text-decoration: none;
+        }
+    }
+}
+
+.btn{
+    height: 4.5rem;
+    background-color: $mainColor;
+    border-radius: 10px;
+    padding:0 1rem 1rem;
+    font-size: 2.5rem;
+    margin: 1rem 0 2rem 0;
+    border: none;
+    transition: all .5s;
+    cursor: pointer;
+    a{
+        font-family: $mainFont;
+        font-weight: 500;
+        color: $secondaryColorDark;
+        text-decoration: none;
+    }
+    &:hover{
+        background-color: $mainColorTransparentBtn;
+    }
+}
+
+h2{
+    font-size: $textLg;
+}
+
+//Galeria
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+} 
+
+.img_container:nth-of-type(1){
+    grid-column: span 4;
+    grid-row: span 1;
+}
+.img_container:nth-of-type(2){
+    grid-column: span 3;
+}
+.img_container:nth-of-type(3){
+    grid-column: span 5;
+}
+.img_container:nth-of-type(4){
+    grid-column: span 7;
+}
+.img_container:nth-of-type(5){
+    grid-column: span 5;
+}
+.img_container:nth-of-type(6){
+    grid-column: span 3;
+}
+.img_container:nth-of-type(7){
+    grid-column: span 6;
+}
+.img_container:nth-of-type(8){
+    grid-column: span 3;
+}
+.img_container:nth-of-type(9){
+    grid-column: span 4;
+}
+.img_container:nth-of-type(10){
+    grid-column: span 4;
+}
+.img_container:nth-of-type(11){
+    grid-column: span 4;
+}
+
+.img_container img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: .2s;
+}
+
+.img_container img:hover{
+    filter: opacity(0.9);
+    transform: scale(0.9);
+    box-shadow: 0px 0px 8px 0px $mainColor;
+    cursor: pointer;
+}
+
+.nuestrosEntrenadores{
+    background-color: $secondaryColorLight;
+    text-align: center;
+    h2{
+        font-size: $textLg;
+        padding: 3rem 0 .8rem;
+    }
+}
+
+.entrenadores h4{
+    padding: 3rem 0;
+    font-size: $textSm;
+}
+
+//Carousel
+.container{
+    margin-top: 2rem;
+    height: 550px;
+    overflow: hidden;
+}
+
+.carousel-inner{
+    height: 500px;
+    width: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+    object-fit: cover;
+    img{
+        width: 100%;
+    }
+    h3{
+        font-size: $textLg2;
+    }
+    p{
+        font-size: $textMd;
+    }
+}
+
+@keyframes headerAnimation{
+    0%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("../img/header.jpg"); background-position: center; background-size: cover;}
+    25%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("../img/header2.jpg"); background-position: center; background-size: cover;}
+    50%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("../img/header3.jpg"); background-position: center; background-size: cover;}
+    75%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("../img/header4.jpg"); background-position: center; background-size: cover;}
+    100%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("../img/header5.jpg"); background-position: center; background-size: cover;}
+}

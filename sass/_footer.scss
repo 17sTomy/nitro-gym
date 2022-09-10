@@ -1,0 +1,26 @@
+footer{
+    background-color: $mainColor; 
+    margin-top: 2rem;
+    height: 130px;
+    ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        li{
+            padding: 2.5rem;
+            a{
+                text-decoration: none;
+                color: $secondaryColorDark;
+                padding: 1rem;
+                font-size: $textLg;
+                margin: 0 auto;
+                transition: .1s;
+                &:hover{
+                    color: $secondaryColorLightTransparent;
+                }
+            }
+        }
+    }
+    
+}
