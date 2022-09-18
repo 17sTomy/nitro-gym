@@ -471,8 +471,8 @@ h2{
     margin-left: 1rem;
 }
 
-.name-user strong{
-    font-size: 2.1rem;
+.name-user span{
+    font-size: 1.5rem;
 }
 
 .resenia{
@@ -831,7 +831,7 @@ footer ul li a:hover{
         margin: 1rem auto;
     }
 
-    .name-user strong{
+    .name-user span{
         font-size: 1.5rem;
     }
 
@@ -983,7 +983,7 @@ footer ul li a:hover{
         margin: 1rem auto;
     }
 
-    .name-user strong{
+    .name-user span{
         font-size: 1.8rem;
     }
 
@@ -1038,7 +1038,7 @@ footer ul li a:hover{
             margin: 1rem auto;
         }
     
-        .name-user strong{
+        .name-user span{
             font-size: 2rem;
         }
     
@@ -1092,7 +1092,7 @@ footer ul li a:hover{
         margin: 1rem auto;
     }
     
-    .name-user strong{
+    .name-user span{
         font-size: 2.1rem;
     }
     
@@ -1178,4 +1178,25 @@ footer ul li a:hover{
     50%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("img/header3.jpg"); background-position: center; background-size: cover;}
     75%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("img/header4.jpg"); background-position: center; background-size: cover;}
     100%{background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.7), rgba(0, 0, 0, .9)), url("img/header5.jpg"); background-position: center; background-size: cover;}
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: rgba(243, 76, 56, 0.9);
+  box-shadow: 0 1px 1px rgba(243, 76, 56, 0.9) inset, 0 0 8px rgba(243, 76, 56, 0.9);
 }

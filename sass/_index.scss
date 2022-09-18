@@ -1,3 +1,10 @@
+.img-effect{
+    filter: opacity(0.9);
+    transform: scale(0.9);
+    box-shadow: 0px 0px 9px 0px map-get($map: $paleta, $key: 'mainColor');
+    cursor: pointer;
+}
+
 header{
     display: flex;
     height: 90vh;
@@ -16,11 +23,11 @@ header{
 
 .titulo{
     text-transform: uppercase;
-    font-size: $textXl;
+    font-size: map-get($map: $sizes, $key: 'textXl');
 }
 
 .quienesSomos{
-    background-color: $secondaryColorDark;
+    background-color: map-get($map: $paleta, $key: 'secondaryColorDark');
     text-align: center;
     margin: auto;
     width: 85%;
@@ -31,39 +38,33 @@ header{
     margin: auto;
     text-align: center;
     padding-bottom: 3rem;
-    p{
-        font-size: $textSm;
-        a{
-            font-size: $textSm;
-            color: $mainColor;
-            text-decoration: none;
-        }
+    a{
+        font-size: map-get($map: $sizes, $key: 'textMd');
+        color: map-get($map: $paleta, $key: 'mainColor');
+        text-decoration: none;
     }
 }
 
 .btn{
     height: 4.5rem;
-    background-color: $mainColor;
-    border-radius: 10px;
-    padding:0 1rem 1rem;
-    font-size: 2.5rem;
-    margin: 1rem 0 2rem 0;
     border: none;
     transition: all .5s;
+    @include botones (none, map-get($map: $paleta, $key: 'mainColor'), none, 10px, .6rem 1rem 1rem, 1rem 0 2rem 0);
     cursor: pointer;
     a{
         font-family: $mainFont;
+        font-size: map-get($map: $sizes, $key: 'textSm');
         font-weight: 500;
-        color: $secondaryColorDark;
+        color: map-get($map: $paleta, $key: 'secondaryColorDark');
         text-decoration: none;
     }
     &:hover{
-        background-color: $mainColorTransparentBtn;
+        background-color: map-get($map: $paleta, $key: 'mainColorTransparentBtn');
     }
 }
 
 h2{
-    font-size: $textLg;
+    font-size: map-get($map: $sizes, $key: 'textLg');
 }
 
 //Galeria
@@ -119,24 +120,21 @@ h2{
 }
 
 .img_container img:hover{
-    filter: opacity(0.9);
-    transform: scale(0.9);
-    box-shadow: 0px 0px 8px 0px $mainColor;
-    cursor: pointer;
+    @extend .img-effect 
 }
 
 .nuestrosEntrenadores{
-    background-color: $secondaryColorLight;
+    background-color: map-get($map: $paleta, $key: 'secondaryColorLight');
     text-align: center;
     h2{
-        font-size: $textLg;
+        font-size: map-get($map: $sizes, $key: 'textLg');
         padding: 3rem 0 .8rem;
     }
 }
 
 .entrenadores h4{
     padding: 3rem 0;
-    font-size: $textSm;
+    font-size: map-get($map: $sizes, $key: 'textSm');
 }
 
 //Carousel
@@ -158,10 +156,10 @@ h2{
         width: 100%;
     }
     h3{
-        font-size: $textLg2;
+        font-size: map-get($map: $sizes, $key: 'textLg2');
     }
     p{
-        font-size: $textMd;
+        font-size: map-get($map: $sizes, $key: 'textMd');
     }
 }
 

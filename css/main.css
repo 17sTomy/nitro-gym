@@ -28,13 +28,13 @@ h1 {
 
 .frase {
   color: rgb(243, 76, 56);
-  font-size: 2rem;
+  font-size: 2.3rem;
   text-align: center;
   padding-bottom: 1rem;
+  margin: 0 1.5rem;
 }
 
 p {
-  color: rgb(255, 255, 255);
   font-size: 1.9rem;
 }
 
@@ -58,9 +58,42 @@ nav button {
 }
 
 .nav-link {
-  font-size: 2rem;
+  font-size: 2.3rem;
   margin-left: 1rem;
   color: rgb(5, 5, 5);
+}
+
+footer {
+  background-color: rgb(243, 76, 56);
+  margin-top: 2rem;
+  height: 130px;
+}
+footer ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li {
+  padding: 2.5rem;
+}
+footer ul li a {
+  text-decoration: none;
+  color: rgb(5, 5, 5);
+  padding: 1rem;
+  font-size: 5rem;
+  margin: 0 auto;
+  transition: 0.1s;
+}
+footer ul li a:hover {
+  color: rgba(10, 10, 10, 0.9);
+}
+
+.img-effect, .img_container img:hover {
+  filter: opacity(0.9);
+  transform: scale(0.9);
+  box-shadow: 0px 0px 9px 0px rgb(243, 76, 56);
+  cursor: pointer;
 }
 
 header {
@@ -84,7 +117,7 @@ header {
 
 .titulo {
   text-transform: uppercase;
-  font-size: 7rem;
+  font-size: 9rem;
 }
 
 .quienesSomos {
@@ -100,28 +133,27 @@ header {
   text-align: center;
   padding-bottom: 3rem;
 }
-.descripcion p {
-  font-size: 1.9rem;
-}
-.descripcion p a {
-  font-size: 1.9rem;
+.descripcion a {
+  font-size: 2.3rem;
   color: rgb(243, 76, 56);
   text-decoration: none;
 }
 
 .btn {
   height: 4.5rem;
-  background-color: rgb(243, 76, 56);
-  border-radius: 10px;
-  padding: 0 1rem 1rem;
-  font-size: 2.5rem;
-  margin: 1rem 0 2rem 0;
   border: none;
   transition: all 0.5s;
+  width: none;
+  background-color: rgb(243, 76, 56);
+  color: none;
+  border-radius: 10px;
+  padding: 0.6rem 1rem 1rem;
+  margin: 1rem 0 2rem 0;
   cursor: pointer;
 }
 .btn a {
   font-family: "Roboto", sans-serif;
+  font-size: 1.9rem;
   font-weight: 500;
   color: rgb(5, 5, 5);
   text-decoration: none;
@@ -196,13 +228,6 @@ h2 {
   transition: 0.2s;
 }
 
-.img_container img:hover {
-  filter: opacity(0.9);
-  transform: scale(0.9);
-  box-shadow: 0px 0px 8px 0px rgb(243, 76, 56);
-  cursor: pointer;
-}
-
 .nuestrosEntrenadores {
   background-color: rgb(10, 10, 10);
   text-align: center;
@@ -240,7 +265,7 @@ h2 {
   font-size: 3rem;
 }
 .carousel-item p {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 @-webkit-keyframes headerAnimation {
@@ -369,12 +394,12 @@ h2 {
     height: 300px;
   }
   .programa:nth-of-type(1) {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(243, 76, 56, 0.3), rgba(0, 0, 0, 0.9)), url("img/weight-lifting.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(243, 76, 56, 0.3), rgba(0, 0, 0, 0.9)), url("../img/weight-lifting.jpg");
     background-attachment: center;
     background-size: cover;
   }
   .programa:nth-of-type(2) {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(243, 76, 56, 0.5), rgba(0, 0, 0, 0.9)), url("img/powerlifting.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(243, 76, 56, 0.5), rgba(0, 0, 0, 0.9)), url("../img/powerlifting.jpg");
     background-attachment: center;
     background-size: cover;
   }
@@ -418,7 +443,7 @@ h2 {
     width: 100%;
     margin: 1rem auto;
   }
-  .name-user strong {
+  .name-user span {
     font-size: 1.5rem;
   }
   .resenia {
@@ -534,7 +559,7 @@ h2 {
     width: 100%;
     margin: 1rem auto;
   }
-  .name-user strong {
+  .name-user span {
     font-size: 1.8rem;
   }
   .resenia {
@@ -578,7 +603,7 @@ h2 {
     width: 100%;
     margin: 1rem auto;
   }
-  .name-user strong {
+  .name-user span {
     font-size: 2rem;
   }
   .resenia {
@@ -621,7 +646,7 @@ h2 {
     width: 100%;
     margin: 1rem auto;
   }
-  .name-user strong {
+  .name-user span {
     font-size: 2.1rem;
   }
   .resenia {
@@ -656,7 +681,7 @@ h2 {
   }
   .carousel-item img {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
   }
   .carousel-item h3 {
     font-size: 3rem;
@@ -689,29 +714,4 @@ h2 {
     height: 50vh;
     overflow: hidden;
   }
-}
-footer {
-  background-color: rgb(243, 76, 56);
-  margin-top: 2rem;
-  height: 130px;
-}
-footer ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  align-items: center;
-}
-footer ul li {
-  padding: 2.5rem;
-}
-footer ul li a {
-  text-decoration: none;
-  color: rgb(5, 5, 5);
-  padding: 1rem;
-  font-size: 5rem;
-  margin: 0 auto;
-  transition: 0.1s;
-}
-footer ul li a:hover {
-  color: rgba(10, 10, 10, 0.9);
 }/*# sourceMappingURL=main.css.map */

@@ -14,10 +14,10 @@ $mainFont: 'Roboto', sans-serif;
 $secondaryFont: 'Figtree', sans-serif;
 
 //Sizing
-$textXl: 7rem;
+$textXl: 9rem;
 $textLg: 5rem;
 $textLg2: 3rem;
-$textMd: 2rem;
+$textMd: 2.3rem;
 $textSm: 1.9rem;
 //Sizing Mobile
 $textResponsiveXl: 6rem;
@@ -56,10 +56,13 @@ h1{
     font-size: $textMd;
     text-align: center;
     padding-bottom: 1rem;
+    margin: 0 1.5rem;
 }
 
 p{
-    color: $fontColor;
     font-size: $textSm;
 }
+
+
+
 
