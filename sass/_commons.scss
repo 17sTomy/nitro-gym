@@ -46,7 +46,7 @@ h1{
     font-size: $textLg;
     color: $fontColor;
     text-transform: uppercase;
-    padding: 3rem 1rem .8rem;
+    padding: 3rem 1rem 0;
     text-align: center;
     font-family: $mainFont;
 }
@@ -60,7 +60,7 @@ h1{
 }
 
 p{
-    font-size: $textSm;
+    font-size: $textMd;
 }
 
 
