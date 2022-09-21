@@ -1,129 +1,127 @@
 @media screen and (max-width: 480px){
     /**********Index**********/
     h1{
-        font-size: $textResponsiveLg;
+        font-size: map-get($map: $sizes, $key: 'textResponsiveLg');
         margin: 0 1rem;
     }
 
-    h2{
-        font-size: $textResponsiveLg;
-    }
-
     .titulo{
-        font-size: $textResponsiveXl;
+        font-size: map-get($map: $sizes, $key: 'textResponsiveXl');
     }
 
     .frase{
         margin: 0 1.5rem;
-        font-size: $textResponsiveMd;
+        font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
     }
 
-    .descripcion{
-        p{
-            font-size: $textResponsiveSm;
-            a{
-                font-size: $textResponsiveSm;
-                color: $mainColor;
-                text-decoration: none;
+    .quienesSomos{
+        .descripcion{
+            p{
+                font-size: map-get($map: $sizes, $key: 'textResponsiveSm');
+                a{
+                    @include text (map-get($map: $sizes, $key: 'textResponsiveSm'), map-get($map: $paleta, $key: 'mainColor'), $secondaryFont);
+                    text-decoration: none;
+                }
             }
+        }
+
+        .entrenadores img{
+            width: 250px;
+        }
+
+        .galeria{
+            .img_container:nth-of-type(1){
+                grid-column: span 12;
+                grid-row: span 2;
+            }
+            .img_container:nth-of-type(2){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(3){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(4){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(5){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(6){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(7){
+                grid-column: span 12;
+            }
+            .img_container:nth-of-type(8){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(9){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(10){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(11){
+                grid-column: span 12;
+            }
+
+            .img_container img{
+                height: 200px;
+            }
+        
         }
     }
 
-    .entrenadores img{
-        width: 250px;
-    }
-
-    .img_container:nth-of-type(1){
-        grid-column: span 12;
-        grid-row: span 2;
-    }
-    .img_container:nth-of-type(2){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(3){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(4){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(5){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(6){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(7){
-        grid-column: span 12;
-    }
-    .img_container:nth-of-type(8){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(9){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(10){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(11){
-        grid-column: span 12;
-    }
-    
-    .img_container img{
-        height: 200px;
-    }
-
     /**********Programas**********/
-    .programa{
-        flex-direction: column;
-        width: 90%;
-        height: 300px;
+    .programas {
+        .programa{
+            flex-direction: column;
+            width: 90%;
+            height: 300px;
+            &:nth-of-type(1){
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("../img/pro_weight-lifting.webp");
+                background-attachment: center;
+                background-size: cover;
+            }
+            &:nth-of-type(2){
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("../img/pro_powerlifting.webp");
+                background-attachment: center;
+                background-size: cover;
+            }
+            &:nth-of-type(3){
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("../img/pro_crossfit.webp");
+                background-attachment: center;
+                background-size: cover;
+            }
+            &:nth-of-type(4){
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("../img/pro_funcional.webp");
+                background-attachment: center;
+                background-size: cover;
+            }
+            
+            .programa-h2{
+                width: 100%;
+                height: 20%;
+                margin: 0 auto;
+                h2{
+                    font-size: map-get($map: $sizes, $key: 'textResponsiveLg');
+                    text-align: center;
+                    padding-left: 0rem;
+                }
+            } 
+            
+            .programa-img {
+                width: 100%;
+                height: 300px;
+                padding-top: 2.5rem;
+                display: none;
+                img{
+                    filter: grayscale(0%);
+                    width: 100%;
+                }
+            }     
+        }         
     }
-    .programa:nth-of-type(1){
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("../img/weight-lifting.jpg");
-        background-attachment: center;
-        background-size: cover;
-    }
-    .programa:nth-of-type(2){
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("../img/powerlifting.jpg");
-        background-attachment: center;
-        background-size: cover;
-    }
-    .programa:nth-of-type(3){
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("../img/crossfit.jpg");
-        background-attachment: center;
-        background-size: cover;
-    }
-    .programa:nth-of-type(4){
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("../img/funcional.jpg");
-        background-attachment: center;
-        background-size: cover;
-    }
-
-    .programa h2{
-        font-size: 3.5rem;
-        text-align: center;
-        margin-top: 0;
-        padding: 2rem 0;
-        color: rgb(218, 218, 218);
-    }
-
-    .programa-img {
-        width: 100%;
-        height: 300px;
-        padding-top: 2.5rem;
-        display: none;
-    }
-
-    .programa-img img{
-        filter: grayscale(0%);
-        width: 100%;
-    }
-
-    .programa-h2{
-        width: 100%;
-        height: 20%;
-        margin: 0 auto;
-    } 
 
     /**********Testimonios**********/
     .testimonios{
@@ -171,88 +169,99 @@
 
 @media screen and (min-width: 481px) and (max-width: 722px){
     /**********Index**********/
-    .img_container:nth-of-type(1){
-        grid-column: span 12;
-        grid-row: span 2;
+    .quienesSomos{
+        .galeria{
+            .img_container:nth-of-type(1){
+                grid-column: span 12;
+                grid-row: span 2;
+            }
+            .img_container:nth-of-type(2){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(3){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(4){
+                grid-column: span 12;
+            }
+            .img_container:nth-of-type(5){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(6){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(7){
+                grid-column: span 12;
+            }
+            .img_container:nth-of-type(8){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(9){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(10){
+                grid-column: span 6;
+            }
+            .img_container:nth-of-type(11){
+                grid-column: span 6;
+            }
+            
+            .img_container img{
+                height: 230px;
+            }
+        }
     }
-    .img_container:nth-of-type(2){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(3){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(4){
-        grid-column: span 12;
-    }
-    .img_container:nth-of-type(5){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(6){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(7){
-        grid-column: span 12;
-    }
-    .img_container:nth-of-type(8){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(9){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(10){
-        grid-column: span 6;
-    }
-    .img_container:nth-of-type(11){
-        grid-column: span 6;
-    }
-    
-    .img_container img{
-        height: 230px;
-    }
-
+        
     /**********Programas**********/
-    .programa{
-        flex-direction: column;
-        width: 90%;
-        height: 300px;
+    .programas {
+        .programa{
+            flex-direction: column;
+            width: 90%;
+            height: 300px;
+            &:nth-of-type(1){
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("../img/pro_weight-lifting.webp");
+                background-attachment: center;
+                background-size: cover;
+            }
+            &:nth-of-type(2){
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("../img/pro_powerlifting.webp");
+                background-attachment: center;
+                background-size: cover;
+            }
+            &:nth-of-type(3){
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("../img/pro_crossfit.webp");
+                background-attachment: center;
+                background-size: cover;
+            }
+            &:nth-of-type(4){
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("../img/pro_funcional.webp");
+                background-attachment: center;
+                background-size: cover;
+            }
+            
+            .programa-h2{
+                width: 100%;
+                height: 20%;
+                margin: 0 auto;
+                h2{
+                    font-size: map-get($map: $sizes, $key: 'textResponsiveLg');
+                    text-align: center;
+                    padding-left: 0rem;
+                }
+            } 
+            
+            .programa-img {
+                width: 100%;
+                height: 300px;
+                padding-top: 2.5rem;
+                display: none;
+                img{
+                    filter: grayscale(0%);
+                    width: 100%;
+                }
+            }     
+        }         
     }
-    .programa:nth-of-type(1){
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("img/weight-lifting.jpg");
-        background-attachment: center;
-        background-size: cover;
-    }
-    .programa:nth-of-type(2){
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("img/powerlifting.jpg");
-        background-attachment: center;
-        background-size: cover;
-    }
-    .programa:nth-of-type(3){
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.3), rgba(0, 0, 0, .9)), url("img/crossfit.jpg");
-        background-attachment: center;
-        background-size:cover;
-    }
-    .programa:nth-of-type(4){
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(243, 76, 56, 0.5), rgba(0, 0, 0, .9)), url("img/funcional.jpg");
-        background-attachment: center;
-        background-size: cover;
-    }
-
-    .programa h2{
-        font-size: 3.5rem;
-        text-align: center;
-        margin-top: 0;
-        padding: 2rem 0;
-        color: rgb(192, 192, 192);
-    }
-
-    .programa-img {
-        display: none;
-    } 
-
-    .programa-h2 h2{
-        height: 20%;
-        margin: 0 auto;
-    } 
 
     /**********Testimonios**********/
     .testimonios{
@@ -289,13 +298,15 @@
 
 @media screen and (min-width: 723px) and (max-width: 1023px){
    /**********Programas**********/ 
-   .programa{
-    width: 80%;
-   }
-   .programa-img{
-    width: 40%;
-   }
-
+   .programas{
+       .programa{
+           width: 90%;
+           .programa-img{
+               width: 40%;
+            }
+        }
+    }
+        
     /**********Membresías**********/
     .membresias{
         display: grid;
@@ -345,12 +356,14 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1240px){
     /**********Programas**********/ 
-   .programa{
-    width: 80%;
-   }
-   .programa-img{
-    width: 40%;
-   }
+    .programas{
+        .programa{
+            width: 90%;
+            .programa-img{
+                width: 40%;
+            }
+        }
+    }
 
     /**********Membresías**********/
     .membresias{
@@ -400,28 +413,26 @@
         margin-top: 2rem;
         height: 650px;
         overflow: hidden;
-    }
-    
-    .carousel-inner{
-        height: 600px;
-        width: 100%;
-    }
-    
-    .carousel-item{
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .carousel-item img{
-        width: 100%;
-        height: 60vh;
-    }
-    
-    .carousel-item h3{
-        font-size: 3rem;
-    }
-    .carousel-item p{
-        font-size: 2rem;
+        
+        .carousel-inner{
+            height: 600px;
+            width: 100%;
+            
+            .carousel-item{
+                height: 100%;
+                object-fit: cover;
+                img{
+                    width: 100%;
+                    height: 40vh;
+                }
+                h3{
+                    font-size: 3rem;
+                }
+                p{
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }
 
@@ -430,23 +441,22 @@
         margin-top: 2rem;
         height: 600px;
         overflow: hidden;
-    }
-    
-    .carousel-inner{
-        height: 500px;
-        width: 100%;
-    }
-    
-    .carousel-item{
-        height: 100%;
-        object-fit: cover;
-    }
-    
-    .carousel-item img{
-        width: 100%;
-        object-fit: cover;
-        object-position: center;
-        height: 50vh;
-        overflow: hidden;
+        
+        .carousel-inner{
+            height: 500px;
+            width: 100%;
+            
+            .carousel-item{
+                height: 100%;
+                object-fit: cover;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    height: 50vh;
+                    overflow: hidden;
+                }
+            }
+        }
     }
 }

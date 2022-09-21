@@ -5,10 +5,10 @@
     align-items: $align;
 }
 
-@mixin text ($size, $color, $align) {
+@mixin text ($size, $color, $family) {
     font-size: $size;
     color: $color;
-    text-align: $align;
+    font-family: $family;
 }
 
 @mixin box ($margin, $background, $color){
@@ -17,11 +17,11 @@
     color: $color;
 }
 
-@mixin botones ($width, $background, $color, $border-radious, $padding, $margin){
+@mixin botones ($width, $background, $border-radious, $padding, $margin){
     width: $width;
     background-color: $background;
-    color: $color;
     border-radius: $border-radious;
     padding: $padding;
     margin: $margin;
+    border: none;
 }

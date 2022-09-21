@@ -20,7 +20,7 @@ $textLg2: 3rem;
 $textMd: 2.3rem;
 $textSm: 1.9rem;
 //Sizing Mobile
-$textResponsiveXl: 6rem;
+$textResponsiveXl: 6.5rem;
 $textResponsiveLg: 4.3rem;
 $textResponsiveMd: 2rem;
 $textResponsiveSm: 1.8rem;
@@ -43,24 +43,21 @@ body{
 }
 
 h1{
-    font-size: $textLg;
-    color: $fontColor;
+    @include text($textLg, $fontColor, $secondaryFont);
     text-transform: uppercase;
     padding: 3rem 1rem 0;
     text-align: center;
-    font-family: $mainFont;
 }
 
 .frase{
-    color: $mainColor;
-    font-size: $textMd;
+    @include text($textMd, $mainColor, $secondaryFont);
     text-align: center;
     padding-bottom: 1rem;
     margin: 0 1.5rem;
 }
 
 p{
-    font-size: $textMd;
+    @include text($textMd, $fontColor, $secondaryFont);
 }
 
 

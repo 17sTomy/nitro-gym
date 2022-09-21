@@ -1,15 +1,15 @@
 .bg-orange{
-    background-color: $mainColorTransparentNav;
+    background-color: map-get($map: $paleta, $key: 'mainColorTransparentNav');
 }
 
 .hamb-btn{
-    font-size: $textSm;
+    font-size: map-get($map: $sizes, $key: 'textSm');
 }
 
 nav button{
     height: 3rem;
     width: 6rem;
-    color: $secondaryColorDark;
+    color: map-get($map: $paleta, $key: '$secondaryColorDark');
     margin-right: 2rem;
 }
 
@@ -18,7 +18,7 @@ nav button{
 }
 
 .nav-link{
-    font-size: $textMd;
+    font-size: map-get($map: $sizes, $key: 'textMd');
     margin-left: 1rem;
     color: $secondaryColorDark;
 }

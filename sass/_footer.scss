@@ -1,23 +1,20 @@
 footer{
-    background-color: $mainColor; 
+    background-color: map-get($map: $paleta, $key: 'mainColor'); 
     margin-top: 2rem;
     height: 130px;
     ul{
-        display: flex;
         list-style-type: none;
-        justify-content: center;
-        align-items: center;
+        @include flex (row, center, center);
         li{
             padding: 2.5rem;
             a{
+                @include text(map-get($map: $sizes, $key: 'textLg'), map-get($map: $paleta, $key: 'secondaryColorDark'), none);
                 text-decoration: none;
-                color: $secondaryColorDark;
                 padding: 1rem;
-                font-size: $textLg;
                 margin: 0 auto;
                 transition: .1s;
                 &:hover{
-                    color: $secondaryColorLightTransparent;
+                    color: map-get($map: $paleta, $key: 'secondaryColorLightTransparent');
                 }
             }
         }
