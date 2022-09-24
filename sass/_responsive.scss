@@ -126,32 +126,32 @@
     /**********Testimonios**********/
     .testimonios{
         grid-template-columns: 90%;
-    }
+        
+        .testimonio-caja{
+            width: 100%;
+            margin: 1rem auto;
 
-    .testimonio-caja{
-        width: 100%;
-        margin: 1rem auto;
+            .caja-top{
+                .resenia{
+                    font-size: map-get($map: $sizes, $key: 'textSm');
+                }
+            }
+            
+            q{
+                @include text (map-get($map: $sizes, $key: 'textResponsiveSm'), none, $mainFont);
+            }
+        }
     }
-
-    .name-user span{
-        font-size: 1.5rem;
-    }
-
-    .resenia{
-        font-size: 1.8rem;
-    }
-
-    .comentario-user{
-        font-size: 2.5rem;
-    }
-
+        
     /**********Contacto**********/
-    .input, .select{
-        width: 90%;
-        font-size: 1.7rem;
-    }
-    .textarea{
-        font-size: 1.7rem;
+    .form{
+        .input, .select{
+            width: 100%;
+            font-size: map-get($map: $sizes, $key: 'textResponsiveSm');
+        }
+        .textarea{
+            font-size: map-get($map: $sizes, $key: 'textResponsiveSm');
+        }
     }
 
     /**********Tienda**********/
@@ -266,34 +266,32 @@
     /**********Testimonios**********/
     .testimonios{
         grid-template-columns: 90%;
-    }
-
-    .testimonio-caja{
-        width: 100%;
-        margin: 1rem auto;
-    }
-
-    .name-user span{
-        font-size: 1.8rem;
-    }
-
-    .resenia{
-        font-size: 1.8rem;
-    }
-
-    .comentario-user{
-        font-size: 2.6rem;
+        
+        .testimonio-caja{
+            width: 100%;
+            margin: 1rem auto;
+            .caja-top{
+                .resenia{
+                    font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+                }
+            }
+                
+            q{
+                @include text (map-get($map: $sizes, $key: 'textResponsiveMd'), none, $mainFont);
+            }
+        }
     }
 
     /**********Contacto**********/
-    .input, .select{
-        width: 90%;
-        font-size: 1.8rem;
+    .form{
+        .input, .select{
+            width: 100%;
+            font-size: map-get($map: $sizes, $key: 'textResponsiveSm');
+        }
+        .textarea{
+            font-size: map-get($map: $sizes, $key: 'textResponsiveSm');
+        }
     }
-    .textarea{
-        font-size: 1.8rem;
-    }
-
 }
 
 @media screen and (min-width: 723px) and (max-width: 1023px){
@@ -312,46 +310,42 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 2rem auto;
-
-    }
-
-    .cardd{
-        margin: 2rem auto;
-        width: 300px;
-    }
-
-        /**********Testimonios**********/
-        .testimonios{
-            grid-template-columns: 90%;
+        
+        .cardd{
+            margin: 2rem auto;
+            width: 300px;
         }
-    
+    }
+        
+     /**********Testimonios**********/
+     .testimonios{
+        grid-template-columns: 90%;
+        
         .testimonio-caja{
             width: 100%;
             margin: 1rem auto;
+            .caja-top{
+                .resenia{
+                    font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+                }
+            }
+                
+            q{
+                @include text (map-get($map: $sizes, $key: 'textResponsiveMd'), none, $mainFont);
+            }
         }
-    
-        .name-user span{
-            font-size: 2rem;
-        }
-    
-        .resenia{
-            font-size: 2rem;
-        }
-    
-        .comentario-user{
-            font-size: 3rem;
-        }
-    
-        /**********Contacto**********/
+    }
+
+    /**********Contacto**********/
+    .form{
         .input, .select{
-            width: 90%;
-            font-size: 2rem;
+            width: 100%;
+            font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
         }
         .textarea{
-            font-size: 2rem;
+            font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
         }
-    
-
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1240px){
@@ -369,42 +363,22 @@
     .membresias{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        
+        .cardd{
+            margin: 2rem auto;
+            width: 400px;
+        } 
     } 
-
-    .cardd{
-        margin: 2rem auto;
-        width: 400px;
-    } 
-
-    /**********Testimonios**********/
-    .testimonios{
-        grid-template-columns: 90%;
-    }
-    
-    .testimonio-caja{
-        width: 100%;
-        margin: 1rem auto;
-    }
-    
-    .name-user span{
-        font-size: 2.1rem;
-    }
-    
-    .resenia{
-        font-size: 2.1rem;
-    }
-    
-    .comentario-user{
-        font-size: 3.2rem;
-    }
     
     /**********Contacto**********/
-    .input, .select{
-        width: 90%;
-        font-size: 2rem;
-    }
-    .textarea{
-        font-size: 2rem;
+    .form{
+        .input, .select{
+            width: 100%;
+            font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+        }
+        .textarea{
+            font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+        }
     }
 }
 

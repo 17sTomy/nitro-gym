@@ -11,17 +11,15 @@
     font-family: $family;
 }
 
-@mixin box ($margin, $background, $color){
-    margin: $margin;
-    background-color: $background;
-    color: $color;
-}
-
 @mixin botones ($width, $background, $border-radious, $padding, $margin){
     width: $width;
     background-color: $background;
     border-radius: $border-radious;
     padding: $padding;
     margin: $margin;
-    border: none;
+    border: none; 
+}
+
+@mixin border ($color){
+    border: 1px solid $color;
 }

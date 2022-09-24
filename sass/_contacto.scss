@@ -1,0 +1,66 @@
+.form{
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+    .input, .select{
+        background-color: map-get($map: $paleta, $key: 'secondaryColorLight');
+        font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+        border: none;
+        border-bottom: 1px solid map-get($map: $paleta, $key: 'mainColor');
+        border-radius: 0;
+        outline: none;
+        color: map-get($map: $paleta, $key: 'mainColor');
+        padding: 10px;
+        width: 44%;
+        margin: 3rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .textarea{
+        border-radius: 0;
+        margin: 3rem auto;
+        padding: 2.5rem 1.5rem;
+        min-width: 99%;
+        min-height: 100px;
+        max-height: 300px;
+        background-color: map-get($map: $paleta, $key: 'secondaryColorLight');
+        font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+        border: none;
+        border-bottom: 1px solid map-get($map: $paleta, $key: 'mainColor');
+        outline: none;
+        color: map-get($map: $paleta, $key: 'mainColor');
+    }
+
+    .input:focus, .textarea:focus, .select:focus{
+        border-bottom: 3px solid map-get($map: $paleta, $key: 'mainColor');
+    }
+    
+    .botones{
+        margin: auto;
+    }
+    
+    .formBtn{
+        @include botones (none, map-get($map: $paleta, $key: 'mainColor'), 10px, 1rem, 1rem 0 2rem 0);
+        color: map-get($map: $paleta, $key: 'secondaryColorDark');
+        font-size: map-get($map: $sizes, $key: 'benefits');
+        transition: all .3s;
+        cursor: pointer;
+        margin: 1rem;
+        &:hover{
+            box-shadow: 0px 0px 8px 0px map-get($map: $paleta, $key: 'mainColor');
+        }
+    }
+}
+    
+.ubicacion{
+    margin: 4rem auto 1rem;
+    text-align: center;
+    width: 96%;
+    
+    iframe{
+        width: 100%;
+        height: 400px;
+    }
+}

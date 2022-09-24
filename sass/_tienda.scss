@@ -1,0 +1,89 @@
+.card{
+    background-color: rgb(10,10,10);
+    border-radius: 10px;
+    margin: 2rem 3rem;
+}
+
+.card-title{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.card-text{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.btn-buy{
+    height: 3rem;
+    width: 80%;
+    background-color: rgb(243, 76, 56);
+    margin: 0 auto;
+    border-radius: 10px;
+    color: rgb(0,0,0);
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all .2s;
+}
+
+.btn-buy:hover{
+    background-color: rgba(243, 76, 56,.5);
+    color: rgb(0,0,0);
+}
+
+
+.form-shop{
+    width: 80%;
+    margin: auto;
+}
+
+.form-shop label{
+    font-size: 2.5rem;
+}
+
+.form-shop input, .form-shop select{
+    background-color: rgb(10,10,10);
+    font-size: 2rem;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(243, 76, 56);
+    outline: none;
+}
+
+.form-check{
+    font-size: 2.5rem;
+}
+.form-check input{
+    margin-top: 1rem;
+    background-color: rgb(10,10,10);
+    border: 1px solid rgb(243, 76, 56);
+}
+
+.form-shop input:focus, .form-shop select:focus{
+    background-color: rgb(10,10,10);
+    color: rgb(243, 76, 56);
+}
+
+.form-shop a{
+    font-size: 2.5rem;
+    color: rgb(243, 76, 56);
+}
+
+.btn-form{
+    width: 30%;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: rgb(243, 76, 56);
+    margin: 0 auto;
+    border-radius: 10px;
+    color: rgb(0,0,0);
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all .2s;
+    outline: none;
+    border: none;
+}
+
+.btn-form:hover{
+    background-color: rgba(243, 76, 56,.5);
+    color: rgb(0,0,0);
+}

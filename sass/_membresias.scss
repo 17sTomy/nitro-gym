@@ -1,0 +1,123 @@
+.membresias{
+    @include flex (row, space-evenly, none);
+    margin: 4rem auto;
+    flex-wrap: wrap;
+    
+    .cardd{
+        width: 260px;
+        height: 470px;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all .2s;
+        margin: 2rem;
+        background-color: map-get($map: $paleta, $key: 'secondaryColorDark');
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        .title{
+            @include text (map-get($map: $sizes, $key: 'textSm'), map-get($map: $paleta, $key: 'secondaryColorDark'), $mainFont);
+            font-weight: bold;
+            height: 40px;
+            padding-top: 1rem;
+            text-align: center;
+            margin: 0;
+        }
+
+        .priceContainer{
+            height: 27%;
+            padding-top: 15px;
+            background-color: map-get($map: $paleta, $key: 'secondaryColorLight');
+            text-align: center;
+            margin-top: 0;
+            p{
+                @include text (map-get($map: $sizes, $key: 'textLg2'), map-get($map: $paleta, $key: 'fontColor'), $secondaryFont);
+            }
+        }
+
+        .incluye{
+            font-size: map-get($map: $sizes, $key: 'textSm');
+            padding: 1rem 0 .5rem;
+            text-align: center;
+        }
+
+        .beneficios{
+            height: 16rem;
+            li{
+                @include text (map-get($map: $sizes, $key: 'benefits'), map-get($map: $paleta, $key: 'fontColor'), $mainFont);
+                list-style: none;
+            }
+        }
+
+        .btnPlan{
+            text-align: center;
+            padding: 1rem 0;
+            height: 100px;
+            button{
+                @include botones (80%, none, 10px, none, none);
+                height: 50px;
+                border: none;
+                transition: all .2s;
+                margin-bottom: 0;
+                a{
+                    text-decoration: none;
+                    font-size: map-get($map: $sizes, $key: 'benefits');
+                    color: map-get($map: $paleta, $key: 'secondaryColorDark');
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+            
+    .platinum-border{
+        @include border(map-get($map: $membresias, $key: 'platinum'));
+        box-shadow: 0px 0px 9px 0px map-get($map: $membresias, $key: 'platinum');
+        cursor: pointer;
+    }
+    .platinum{
+        background-color: map-get($map: $membresias, $key: 'platinum');
+    }
+    .btnPlan .platinum:hover{
+        box-shadow: 0px 0px 9px 0px map-get($map: $membresias, $key: 'platinum');
+        cursor: pointer;
+    }
+    
+    .gold-border{
+        @include border(map-get($map: $membresias, $key: 'golden'));
+        box-shadow: 0px 0px 9px 0px map-get($map: $membresias, $key: 'golden');
+        cursor: pointer;
+    }
+    .gold{
+        background-color: map-get($map: $membresias, $key: 'golden');
+    }
+    .btnPlan .gold:hover{
+        box-shadow: 0px 0px 9px 0px map-get($map: $membresias, $key: 'golden');
+        cursor: pointer;
+    }
+    
+    .silver-border{
+        @include border(map-get($map: $membresias, $key: 'silver'));
+        box-shadow: 0px 0px 9px 0px map-get($map: $membresias, $key: 'silver');
+        cursor: pointer;
+    }
+    .silver{
+        background-color: map-get($map: $membresias, $key: 'silver');
+    }
+    .btnPlan .silver:hover{
+        box-shadow: 0px 0px 9px 0px map-get($map: $membresias, $key: 'silver');
+        cursor: pointer;
+    }
+    
+    .bronze-border{
+        @include border(map-get($map: $membresias, $key: 'bronze'));
+        box-shadow: 0px 0px 9px 0px map-get($map: $membresias, $key: 'bronze');
+        cursor: pointer;
+    }
+    .bronze{
+        background-color: map-get($map: $membresias, $key: 'bronze');
+    }
+    .btnPlan .bronze:hover{
+        box-shadow: 0px 0px 9px 0px map-get($map: $membresias, $key: 'bronze');
+        cursor: pointer;
+    }
+}

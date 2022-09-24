@@ -8,12 +8,20 @@ $paleta:(
     'fontColor': $fontColor
 );
 
+$membresias:(
+    'platinum': rgb(0, 148, 113),
+    'golden': rgb(255, 215, 0),
+    'silver': rgb(192, 192, 192),
+    'bronze': rgb(205, 127, 50)
+);
+
 $sizes:(
     'textXl': $textXl,
     'textLg': $textLg,
     'textLg2': $textLg2,
     'textMd': $textMd,
     'textSm': $textSm,
+    'benefits': $benefits,
     'textResponsiveXl': $textResponsiveXl,
     'textResponsiveLg': $textResponsiveLg,
     'textResponsiveMd': $textResponsiveMd,

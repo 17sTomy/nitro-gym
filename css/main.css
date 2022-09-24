@@ -312,6 +312,7 @@ header {
   align-items: center;
 }
 .programas .programa {
+  border: 1px solid rgb(243, 76, 56);
   width: 60%;
   height: 250px;
   margin: auto;
@@ -319,7 +320,6 @@ header {
   justify-content: space-between;
   align-content: center;
   margin-top: 3rem;
-  border: 1px solid rgb(243, 76, 56);
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.5s;
@@ -346,6 +346,269 @@ header {
 }
 .programas .programa:hover img {
   filter: grayscale(0%);
+}
+
+.membresias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: none;
+  margin: 4rem auto;
+  flex-wrap: wrap;
+}
+.membresias .cardd {
+  width: 260px;
+  height: 470px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin: 2rem;
+  background-color: rgb(5, 5, 5);
+}
+.membresias .cardd:hover {
+  transform: scale(1.1);
+}
+.membresias .cardd .title {
+  font-size: 1.9rem;
+  color: rgb(5, 5, 5);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  height: 40px;
+  padding-top: 1rem;
+  text-align: center;
+  margin: 0;
+}
+.membresias .cardd .priceContainer {
+  height: 27%;
+  padding-top: 15px;
+  background-color: rgb(10, 10, 10);
+  text-align: center;
+  margin-top: 0;
+}
+.membresias .cardd .priceContainer p {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-family: "Figtree", sans-serif;
+}
+.membresias .cardd .incluye {
+  font-size: 1.9rem;
+  padding: 1rem 0 0.5rem;
+  text-align: center;
+}
+.membresias .cardd .beneficios {
+  height: 16rem;
+}
+.membresias .cardd .beneficios li {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+.membresias .cardd .btnPlan {
+  text-align: center;
+  padding: 1rem 0;
+  height: 100px;
+}
+.membresias .cardd .btnPlan button {
+  width: 80%;
+  background-color: none;
+  border-radius: 10px;
+  padding: none;
+  margin: none;
+  border: none;
+  height: 50px;
+  border: none;
+  transition: all 0.2s;
+  margin-bottom: 0;
+}
+.membresias .cardd .btnPlan button a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+}
+.membresias .platinum-border {
+  border: 1px solid rgb(0, 148, 113);
+  box-shadow: 0px 0px 9px 0px rgb(0, 148, 113);
+  cursor: pointer;
+}
+.membresias .platinum {
+  background-color: rgb(0, 148, 113);
+}
+.membresias .btnPlan .platinum:hover {
+  box-shadow: 0px 0px 9px 0px rgb(0, 148, 113);
+  cursor: pointer;
+}
+.membresias .gold-border {
+  border: 1px solid rgb(255, 215, 0);
+  box-shadow: 0px 0px 9px 0px rgb(255, 215, 0);
+  cursor: pointer;
+}
+.membresias .gold {
+  background-color: rgb(255, 215, 0);
+}
+.membresias .btnPlan .gold:hover {
+  box-shadow: 0px 0px 9px 0px rgb(255, 215, 0);
+  cursor: pointer;
+}
+.membresias .silver-border {
+  border: 1px solid rgb(192, 192, 192);
+  box-shadow: 0px 0px 9px 0px rgb(192, 192, 192);
+  cursor: pointer;
+}
+.membresias .silver {
+  background-color: rgb(192, 192, 192);
+}
+.membresias .btnPlan .silver:hover {
+  box-shadow: 0px 0px 9px 0px rgb(192, 192, 192);
+  cursor: pointer;
+}
+.membresias .bronze-border {
+  border: 1px solid rgb(205, 127, 50);
+  box-shadow: 0px 0px 9px 0px rgb(205, 127, 50);
+  cursor: pointer;
+}
+.membresias .bronze {
+  background-color: rgb(205, 127, 50);
+}
+.membresias .btnPlan .bronze:hover {
+  box-shadow: 0px 0px 9px 0px rgb(205, 127, 50);
+  cursor: pointer;
+}
+
+.testimonios {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 46%);
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 80px;
+}
+.testimonios .testimonio-caja {
+  background-color: rgb(10, 10, 10);
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  padding: 2rem;
+  margin: 15px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.testimonios .testimonio-caja:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 0px 8px 0px rgb(243, 76, 56);
+}
+.testimonios .testimonio-caja .caja-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+}
+.testimonios .testimonio-caja .caja-top .perfil {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.testimonios .testimonio-caja .caja-top .perfil .perfil-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonios .testimonio-caja .caja-top .perfil .perfil-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.testimonios .testimonio-caja .caja-top .perfil .name-user {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.9rem;
+  margin-left: 1rem;
+}
+.testimonios .testimonio-caja .caja-top .perfil .name-user span {
+  font-size: 1.5rem;
+}
+.testimonios .testimonio-caja .caja-top .perfil .name-user .name {
+  font-size: 1.9rem;
+}
+.testimonios .testimonio-caja .caja-top .resenia {
+  color: rgb(255, 215, 0);
+  font-size: 2.3rem;
+}
+.testimonios q {
+  font-size: 2rem;
+  color: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.form {
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form .input, .form .select {
+  background-color: rgb(10, 10, 10);
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid rgb(243, 76, 56);
+  border-radius: 0;
+  outline: none;
+  color: rgb(243, 76, 56);
+  padding: 10px;
+  width: 44%;
+  margin: 3rem;
+  padding: 2rem 1.5rem;
+}
+.form .textarea {
+  border-radius: 0;
+  margin: 3rem auto;
+  padding: 2.5rem 1.5rem;
+  min-width: 99%;
+  min-height: 100px;
+  max-height: 300px;
+  background-color: rgb(10, 10, 10);
+  font-size: 2rem;
+  border: none;
+  border-bottom: 1px solid rgb(243, 76, 56);
+  outline: none;
+  color: rgb(243, 76, 56);
+}
+.form .input:focus, .form .textarea:focus, .form .select:focus {
+  border-bottom: 3px solid rgb(243, 76, 56);
+}
+.form .botones {
+  margin: auto;
+}
+.form .formBtn {
+  width: none;
+  background-color: rgb(243, 76, 56);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0 2rem 0;
+  border: none;
+  color: rgb(5, 5, 5);
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 1rem;
+}
+.form .formBtn:hover {
+  box-shadow: 0px 0px 8px 0px rgb(243, 76, 56);
+}
+
+.ubicacion {
+  margin: 4rem auto 1rem;
+  text-align: center;
+  width: 96%;
+}
+.ubicacion iframe {
+  width: 100%;
+  height: 400px;
 }
 
 @media screen and (max-width: 480px) {
@@ -460,26 +723,25 @@ header {
   .testimonios {
     grid-template-columns: 90%;
   }
-  .testimonio-caja {
+  .testimonios .testimonio-caja {
     width: 100%;
     margin: 1rem auto;
   }
-  .name-user span {
-    font-size: 1.5rem;
+  .testimonios .testimonio-caja .caja-top .resenia {
+    font-size: 1.9rem;
   }
-  .resenia {
+  .testimonios .testimonio-caja q {
     font-size: 1.8rem;
-  }
-  .comentario-user {
-    font-size: 2.5rem;
+    color: none;
+    font-family: "Roboto", sans-serif;
   }
   /**********Contacto**********/
-  .input, .select {
-    width: 90%;
-    font-size: 1.7rem;
+  .form .input, .form .select {
+    width: 100%;
+    font-size: 1.8rem;
   }
-  .textarea {
-    font-size: 1.7rem;
+  .form .textarea {
+    font-size: 1.8rem;
   }
   /**********Tienda**********/
   .form-shop label {
@@ -582,25 +844,24 @@ header {
   .testimonios {
     grid-template-columns: 90%;
   }
-  .testimonio-caja {
+  .testimonios .testimonio-caja {
     width: 100%;
     margin: 1rem auto;
   }
-  .name-user span {
-    font-size: 1.8rem;
+  .testimonios .testimonio-caja .caja-top .resenia {
+    font-size: 2rem;
   }
-  .resenia {
-    font-size: 1.8rem;
-  }
-  .comentario-user {
-    font-size: 2.6rem;
+  .testimonios .testimonio-caja q {
+    font-size: 2rem;
+    color: none;
+    font-family: "Roboto", sans-serif;
   }
   /**********Contacto**********/
-  .input, .select {
-    width: 90%;
+  .form .input, .form .select {
+    width: 100%;
     font-size: 1.8rem;
   }
-  .textarea {
+  .form .textarea {
     font-size: 1.8rem;
   }
 }
@@ -618,7 +879,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     margin: 2rem auto;
   }
-  .cardd {
+  .membresias .cardd {
     margin: 2rem auto;
     width: 300px;
   }
@@ -626,25 +887,24 @@ header {
   .testimonios {
     grid-template-columns: 90%;
   }
-  .testimonio-caja {
+  .testimonios .testimonio-caja {
     width: 100%;
     margin: 1rem auto;
   }
-  .name-user span {
+  .testimonios .testimonio-caja .caja-top .resenia {
     font-size: 2rem;
   }
-  .resenia {
+  .testimonios .testimonio-caja q {
     font-size: 2rem;
-  }
-  .comentario-user {
-    font-size: 3rem;
+    color: none;
+    font-family: "Roboto", sans-serif;
   }
   /**********Contacto**********/
-  .input, .select {
-    width: 90%;
+  .form .input, .form .select {
+    width: 100%;
     font-size: 2rem;
   }
-  .textarea {
+  .form .textarea {
     font-size: 2rem;
   }
 }
@@ -661,33 +921,16 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  .cardd {
+  .membresias .cardd {
     margin: 2rem auto;
     width: 400px;
   }
-  /**********Testimonios**********/
-  .testimonios {
-    grid-template-columns: 90%;
-  }
-  .testimonio-caja {
-    width: 100%;
-    margin: 1rem auto;
-  }
-  .name-user span {
-    font-size: 2.1rem;
-  }
-  .resenia {
-    font-size: 2.1rem;
-  }
-  .comentario-user {
-    font-size: 3.2rem;
-  }
   /**********Contacto**********/
-  .input, .select {
-    width: 90%;
+  .form .input, .form .select {
+    width: 100%;
     font-size: 2rem;
   }
-  .textarea {
+  .form .textarea {
     font-size: 2rem;
   }
 }
