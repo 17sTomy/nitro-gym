@@ -154,13 +154,6 @@
         }
     }
 
-    /**********Tienda**********/
-    .form-shop label{
-        font-size: 2rem;
-    }
-    .form-shop a{
-        font-size: 2rem;
-    }
     /**********Footer**********/
     footer ul li a{
         font-size: 4rem;
@@ -400,10 +393,10 @@
                     height: 40vh;
                 }
                 h3{
-                    font-size: 3rem;
+                    font-size: map-get($map: $sizes, $key: 'textLg2');
                 }
                 p{
-                    font-size: 2rem;
+                    font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
                 }
             }
         }
@@ -433,4 +426,14 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 530px) and (max-width: 767px){
+    /**********Tienda**********/ 
+   .row{
+    display: flex;
+    article{
+        width: 50%;
+    }
+   }
 }

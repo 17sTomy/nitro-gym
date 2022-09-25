@@ -1,89 +1,91 @@
 .card{
-    background-color: rgb(10,10,10);
+    background-color: map-get($map: $paleta, $key: 'secondaryColorLight');
     border-radius: 10px;
     margin: 2rem 3rem;
-}
+    transition: .2s;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 0px 0px 8px 0px map-get($map: $paleta, $key: 'mainColor');
+    }
 
-.card-title{
-    font-size: 2.5rem;
-    text-align: center;
-}
-.card-text{
-    font-size: 2rem;
-    text-align: center;
-}
+    img{
+        border-radius: 10px;
+    }
 
-.btn-buy{
-    height: 3rem;
-    width: 80%;
-    background-color: rgb(243, 76, 56);
-    margin: 0 auto;
-    border-radius: 10px;
-    color: rgb(0,0,0);
-    font-size: 2rem;
-    text-decoration: none;
-    transition: all .2s;
+    .card-title{
+        font-size: map-get($map: $sizes, $key: 'textMd');
+        text-align: center;
+    }
+    .card-text{
+        font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+        text-align: center;
+    }
+    
+    .btn-buy{
+        @include botones (80%, map-get($map: $paleta, $key: 'mainColor'), 10px, none, 0 auto);
+        height: 3rem;
+        color: map-get($map: $paleta, $key: 'secondaryColorDark');
+        font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+        text-decoration: none;
+        transition: all .2s;
+        &:hover{
+            background-color: map-get($map: $paleta, $key: 'mainColorTransparentBtn');
+            color: map-get($map: $paleta, $key: 'secondaryColorDark');
+        }
+    }
 }
-
-.btn-buy:hover{
-    background-color: rgba(243, 76, 56,.5);
-    color: rgb(0,0,0);
-}
-
 
 .form-shop{
     width: 80%;
     margin: auto;
-}
 
-.form-shop label{
-    font-size: 2.5rem;
-}
+    h2{
+        @include text (map-get($map: $sizes, $key: 'textLg'), map-get($map: $paleta, $key: 'fontColor'), $secondaryFont)
+    }
 
-.form-shop input, .form-shop select{
-    background-color: rgb(10,10,10);
-    font-size: 2rem;
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid rgb(243, 76, 56);
-    outline: none;
-}
-
-.form-check{
-    font-size: 2.5rem;
-}
-.form-check input{
-    margin-top: 1rem;
-    background-color: rgb(10,10,10);
-    border: 1px solid rgb(243, 76, 56);
-}
-
-.form-shop input:focus, .form-shop select:focus{
-    background-color: rgb(10,10,10);
-    color: rgb(243, 76, 56);
-}
-
-.form-shop a{
-    font-size: 2.5rem;
-    color: rgb(243, 76, 56);
-}
-
-.btn-form{
-    width: 30%;
-    height: 4rem;
-    line-height: 4rem;
-    background-color: rgb(243, 76, 56);
-    margin: 0 auto;
-    border-radius: 10px;
-    color: rgb(0,0,0);
-    font-size: 2rem;
-    text-decoration: none;
-    transition: all .2s;
-    outline: none;
-    border: none;
-}
-
-.btn-form:hover{
-    background-color: rgba(243, 76, 56,.5);
-    color: rgb(0,0,0);
+    label{
+        font-size: map-get($map: $sizes, $key: 'textMd');
+    }
+    
+    input, select{
+        background-color: map-get($map: $paleta, $key: 'secondaryColorLight');
+        font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid map-get($map: $paleta, $key: 'mainColor');
+        outline: none;
+        &:focus, &:focus{
+            background-color: map-get($map: $paleta, $key: 'secondaryColorLight');
+            color: map-get($map: $paleta, $key: 'mainColor');
+        }
+    }
+    
+    .form-check{
+        font-size: map-get($map: $sizes, $key: 'textMd');
+        input{
+            margin-top: 1rem;
+            background-color: map-get($map: $paleta, $key: 'secondaryColorLight');
+            @include border (map-get($map: $paleta, $key: 'mainColor'));
+        }
+        
+        a{
+            color: map-get($map: $paleta, $key: 'mainColor');
+            @include text (map-get($map: $sizes, $key: 'textMd'), map-get($map: $paleta, $key: 'mainColor'), $mainFont)
+        }
+    }
+    
+    
+    .btn-form{
+        @include botones (30%, map-get($map: $paleta, $key: 'mainColor'), 10px, 1rem auto, 2rem auto);
+        height: 4rem;
+        line-height: 4rem;
+        color: map-get($map: $paleta, $key: 'secondaryColorDark');
+        font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+        text-decoration: none;
+        transition: all .2s;
+        &:hover{
+            background-color: map-get($map: $paleta, $key: 'mainColorTransparentBtn');
+            color: map-get($map: $paleta, $key: 'secondaryColorDark');
+        }
+    }
 }

@@ -2,6 +2,11 @@
     background-color: map-get($map: $paleta, $key: 'mainColorTransparentNav');
 }
 
+.navbar-toggler{
+    color: map-get($map: $paleta, $key: 'secondaryColorDark');
+    @include border (map-get($map: $paleta, $key: 'secondaryColorDark'));
+}
+
 .hamb-btn{
     font-size: map-get($map: $sizes, $key: 'textSm');
 }
@@ -9,7 +14,7 @@
 nav button{
     height: 3rem;
     width: 6rem;
-    color: map-get($map: $paleta, $key: '$secondaryColorDark');
+    color: map-get($map: $paleta, $key: 'secondaryColorDark');
     margin-right: 2rem;
 }
 

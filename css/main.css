@@ -41,8 +41,33 @@ p {
   font-family: "Figtree", sans-serif;
 }
 
+textarea:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=datetime]:focus,
+input[type=datetime-local]:focus,
+input[type=date]:focus,
+input[type=month]:focus,
+input[type=time]:focus,
+input[type=week]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=color]:focus,
+.uneditable-input:focus {
+  border-color: rgb(243, 76, 56);
+  box-shadow: 0 1px 1px rgb(243, 76, 56) inset, 0 0 8px rgb(243, 76, 56);
+}
+
 .bg-orange {
   background-color: rgba(243, 76, 56, 0.9);
+}
+
+.navbar-toggler {
+  color: rgb(5, 5, 5);
+  border: 1px solid rgb(5, 5, 5);
 }
 
 .hamb-btn {
@@ -52,6 +77,7 @@ p {
 nav button {
   height: 3rem;
   width: 6rem;
+  color: rgb(5, 5, 5);
   margin-right: 2rem;
 }
 
@@ -611,6 +637,102 @@ header {
   height: 400px;
 }
 
+.card {
+  background-color: rgb(10, 10, 10);
+  border-radius: 10px;
+  margin: 2rem 3rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0px 0px 8px 0px rgb(243, 76, 56);
+}
+.card img {
+  border-radius: 10px;
+}
+.card .card-title {
+  font-size: 2.3rem;
+  text-align: center;
+}
+.card .card-text {
+  font-size: 2rem;
+  text-align: center;
+}
+.card .btn-buy {
+  width: 80%;
+  background-color: rgb(243, 76, 56);
+  border-radius: 10px;
+  padding: none;
+  margin: 0 auto;
+  border: none;
+  height: 3rem;
+  color: rgb(5, 5, 5);
+  font-size: 2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.card .btn-buy:hover {
+  background-color: rgba(243, 76, 56, 0.6);
+  color: rgb(5, 5, 5);
+}
+
+.form-shop {
+  width: 80%;
+  margin: auto;
+}
+.form-shop h2 {
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  font-family: "Figtree", sans-serif;
+}
+.form-shop label {
+  font-size: 2.3rem;
+}
+.form-shop input, .form-shop select {
+  background-color: rgb(10, 10, 10);
+  font-size: 2rem;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgb(243, 76, 56);
+  outline: none;
+}
+.form-shop input:focus, .form-shop input:focus, .form-shop select:focus, .form-shop select:focus {
+  background-color: rgb(10, 10, 10);
+  color: rgb(243, 76, 56);
+}
+.form-shop .form-check {
+  font-size: 2.3rem;
+}
+.form-shop .form-check input {
+  margin-top: 1rem;
+  background-color: rgb(10, 10, 10);
+  border: 1px solid rgb(243, 76, 56);
+}
+.form-shop .form-check a {
+  color: rgb(243, 76, 56);
+  font-size: 2.3rem;
+  color: rgb(243, 76, 56);
+  font-family: "Roboto", sans-serif;
+}
+.form-shop .btn-form {
+  width: 30%;
+  background-color: rgb(243, 76, 56);
+  border-radius: 10px;
+  padding: 1rem auto;
+  margin: 2rem auto;
+  border: none;
+  height: 4rem;
+  line-height: 4rem;
+  color: rgb(5, 5, 5);
+  font-size: 2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.form-shop .btn-form:hover {
+  background-color: rgba(243, 76, 56, 0.6);
+  color: rgb(5, 5, 5);
+}
+
 @media screen and (max-width: 480px) {
   /**********Index**********/
   h1 {
@@ -742,13 +864,6 @@ header {
   }
   .form .textarea {
     font-size: 1.8rem;
-  }
-  /**********Tienda**********/
-  .form-shop label {
-    font-size: 2rem;
-  }
-  .form-shop a {
-    font-size: 2rem;
   }
   /**********Footer**********/
   footer ul li a {
@@ -983,5 +1098,14 @@ header {
        object-position: center;
     height: 50vh;
     overflow: hidden;
+  }
+}
+@media screen and (min-width: 530px) and (max-width: 767px) {
+  /**********Tienda**********/
+  .row {
+    display: flex;
+  }
+  .row article {
+    width: 50%;
   }
 }/*# sourceMappingURL=main.css.map */
