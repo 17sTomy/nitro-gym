@@ -8,33 +8,38 @@
 
 
 <url>
-  <loc>https://nitro-gym.netlify.app/index.html</loc>
-  <lastmod>2022-09-25T01:11:26+00:00</lastmod>
+  <loc>https://nitro-gym.netlify.app/</loc>
+  <lastmod>2022-09-25T01:18:59+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://nitro-gym.netlify.app/index.html</loc>
+  <lastmod>2022-09-25T01:18:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://nitro-gym.netlify.app/views/programas.html</loc>
-  <lastmod>2022-09-25T01:11:26+00:00</lastmod>
+  <lastmod>2022-09-25T01:18:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://nitro-gym.netlify.app/views/membresias.html</loc>
-  <lastmod>2022-09-25T01:11:26+00:00</lastmod>
+  <lastmod>2022-09-25T01:18:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://nitro-gym.netlify.app/views/testimonios.html</loc>
-  <lastmod>2022-09-25T01:11:26+00:00</lastmod>
+  <lastmod>2022-09-25T01:18:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://nitro-gym.netlify.app/views/contacto.html</loc>
-  <lastmod>2022-09-25T01:11:26+00:00</lastmod>
+  <lastmod>2022-09-25T01:18:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://nitro-gym.netlify.app/views/tienda.html</loc>
-  <lastmod>2022-09-25T01:11:26+00:00</lastmod>
+  <lastmod>2022-09-25T01:18:59+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
