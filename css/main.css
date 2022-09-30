@@ -733,6 +733,35 @@ header {
   color: rgb(5, 5, 5);
 }
 
+.page404-h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: none;
+  font-family: "Roboto", sans-serif;
+  padding: 2rem;
+}
+
+ul {
+  text-align: center;
+  padding-top: 1rem;
+}
+ul .page404-li {
+  font-size: 1.9rem;
+  color: none;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+ul .page404-li .page404-a {
+  font-size: 1.9rem;
+  color: rgb(243, 76, 56);
+  font-family: "Roboto", sans-serif;
+}
+ul .page404-li .page404-a:hover {
+  font-size: 1.9rem;
+  color: rgb(243, 76, 56);
+  font-family: "Roboto", sans-serif;
+}
+
 @media screen and (max-width: 480px) {
   /**********Index**********/
   h1 {

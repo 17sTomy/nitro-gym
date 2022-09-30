@@ -1,0 +1,21 @@
+.page404-h2{
+    text-align: center;
+    @include text (map-get($map: $sizes, $key: 'textLg2'), none, $mainFont);
+    padding: 2rem;
+}
+
+ul{
+    text-align: center;
+    padding-top: 1rem;
+    .page404-li{
+        @include text (map-get($map: $sizes, $key: 'textSm'), none, $mainFont);
+        list-style: none;
+        .page404-a{
+            @include text (map-get($map: $sizes, $key: 'textSm'), map-get($map: $paleta, $key: 'mainColor'), $mainFont);
+            &:hover{
+                @include text (map-get($map: $sizes, $key: 'textSm'), map-get($map: $paleta, $key: 'mainColor'), $mainFont);
+            }
+        }
+    }
+}
+
