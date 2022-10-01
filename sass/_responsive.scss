@@ -161,6 +161,10 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 722px){
+    .titulo{
+        font-size: map-get($map: $sizes, $key: 'textResponsiveXl');
+    }
+
     /**********Index**********/
     .quienesSomos{
         .galeria{
@@ -436,4 +440,56 @@
         width: 50%;
     }
    }
+}
+
+@media screen and (max-width: 360px){
+    .titulo{
+        font-size: map-get($map: $sizes, $key: 'textLg');
+    }
+
+    footer{
+        ul{
+            li{
+                padding: 1.5rem;
+                a{
+                    font-size: map-get($map: $sizes, $key: 'textResponsiveLg');
+                }
+            }
+        }
+    }
+
+    h1{
+        font-size: 3.4rem;
+    }
+    
+    h2{
+        font-size: map-get($map: $sizes, $key: 'textResponsiveMd');
+    }
+
+    .testimonios{
+        grid-template-columns: 90%;
+        .testimonio-caja{
+            .caja-top{
+                .perfil{                   
+                    .name-user{
+                        font-size: map-get($map: $sizes, $key: 'benefits');
+                        span{
+                            font-size: map-get($map: $sizes, $key: 'benefits');
+                        }
+                        .name{
+                            font-size: map-get($map: $sizes, $key: 'benefits');
+                        }
+                    }
+                }
+                
+                .resenia{
+                    font-size: map-get($map: $sizes, $key: 'benefits');
+                }
+            }
+        }
+    
+        q{
+            @include text (map-get($map: $sizes, $key: 'benefits'), none, $mainFont);
+        }
+    }
 }

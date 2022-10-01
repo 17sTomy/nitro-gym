@@ -241,7 +241,7 @@ header {
   transition: 0.2s;
 }
 .nuestrosEntrenadores {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(12, 12, 12);
   text-align: center;
 }
 .nuestrosEntrenadores h2 {
@@ -407,7 +407,7 @@ header {
 .membresias .cardd .priceContainer {
   height: 27%;
   padding-top: 15px;
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(12, 12, 12);
   text-align: center;
   margin-top: 0;
 }
@@ -511,7 +511,7 @@ header {
   margin-bottom: 80px;
 }
 .testimonios .testimonio-caja {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(12, 12, 12);
   color: rgb(255, 255, 255);
   font-size: 4rem;
   padding: 2rem;
@@ -578,7 +578,7 @@ header {
   flex-wrap: wrap;
 }
 .form .input, .form .select {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(12, 12, 12);
   font-size: 2rem;
   border: none;
   border-bottom: 1px solid rgb(243, 76, 56);
@@ -597,7 +597,7 @@ header {
   min-width: 99%;
   min-height: 100px;
   max-height: 300px;
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(12, 12, 12);
   font-size: 2rem;
   border: none;
   border-bottom: 1px solid rgb(243, 76, 56);
@@ -638,7 +638,7 @@ header {
 }
 
 .card {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(12, 12, 12);
   border-radius: 10px;
   margin: 2rem 3rem;
   transition: 0.2s;
@@ -689,7 +689,7 @@ header {
   font-size: 2.3rem;
 }
 .form-shop input, .form-shop select {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(12, 12, 12);
   font-size: 2rem;
   border: none;
   border-radius: 0;
@@ -697,7 +697,7 @@ header {
   outline: none;
 }
 .form-shop input:focus, .form-shop input:focus, .form-shop select:focus, .form-shop select:focus {
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(12, 12, 12);
   color: rgb(243, 76, 56);
 }
 .form-shop .form-check {
@@ -705,7 +705,7 @@ header {
 }
 .form-shop .form-check input {
   margin-top: 1rem;
-  background-color: rgb(10, 10, 10);
+  background-color: rgb(12, 12, 12);
   border: 1px solid rgb(243, 76, 56);
 }
 .form-shop .form-check a {
@@ -741,22 +741,22 @@ header {
   padding: 2rem;
 }
 
-ul {
+.page404-ul {
   text-align: center;
   padding-top: 1rem;
 }
-ul .page404-li {
+.page404-ul .page404-li {
   font-size: 1.9rem;
   color: none;
   font-family: "Roboto", sans-serif;
   list-style: none;
 }
-ul .page404-li .page404-a {
+.page404-ul .page404-li .page404-a {
   font-size: 1.9rem;
   color: rgb(243, 76, 56);
   font-family: "Roboto", sans-serif;
 }
-ul .page404-li .page404-a:hover {
+.page404-ul .page404-li .page404-a:hover {
   font-size: 1.9rem;
   color: rgb(243, 76, 56);
   font-family: "Roboto", sans-serif;
@@ -900,6 +900,9 @@ ul .page404-li .page404-a:hover {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 722px) {
+  .titulo {
+    font-size: 6.5rem;
+  }
   /**********Index**********/
   .quienesSomos .galeria .img_container:nth-of-type(1) {
     grid-column: span 12;
@@ -1136,5 +1139,42 @@ ul .page404-li .page404-a:hover {
   }
   .row article {
     width: 50%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .titulo {
+    font-size: 5rem;
+  }
+  footer ul li {
+    padding: 1.5rem;
+  }
+  footer ul li a {
+    font-size: 4.3rem;
+  }
+  h1 {
+    font-size: 3.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .testimonios {
+    grid-template-columns: 90%;
+  }
+  .testimonios .testimonio-caja .caja-top .perfil .name-user {
+    font-size: 1.5rem;
+  }
+  .testimonios .testimonio-caja .caja-top .perfil .name-user span {
+    font-size: 1.5rem;
+  }
+  .testimonios .testimonio-caja .caja-top .perfil .name-user .name {
+    font-size: 1.5rem;
+  }
+  .testimonios .testimonio-caja .caja-top .resenia {
+    font-size: 1.5rem;
+  }
+  .testimonios q {
+    font-size: 1.5rem;
+    color: none;
+    font-family: "Roboto", sans-serif;
   }
 }/*# sourceMappingURL=main.css.map */
