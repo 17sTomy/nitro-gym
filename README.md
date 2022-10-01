@@ -1,8 +1,11 @@
 # Nitro Gym
 
 ## Descripción
-Sitio web sobre un gimnasio ficticio
+Sitio web sobre un gimnasio ficticio.
 
-##Deploy
-[Sitio subido al servidor](https://nitro-gym.netlify.app/)
+## Deploy
+[Visualiza el proyecto tocando este link.](https://nitro-gym.netlify.app/)
+
+## Page 404
+Se encuentra tocando el link de las redes sociales.
 
