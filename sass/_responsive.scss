@@ -394,7 +394,6 @@
                 object-fit: cover;
                 img{
                     width: 100%;
-                    height: 40vh;
                 }
                 h3{
                     font-size: map-get($map: $sizes, $key: 'textLg2');
