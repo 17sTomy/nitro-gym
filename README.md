@@ -1,7 +1,7 @@
 # Nitro Gym
 
 ## Descripción
-Sitio web sobre un gimnasio ficticio.
+Proyecto final del curso de Desarrollo Web de Coderhouse. Se trata de un sitio web sobre un gimnasio ficticio.
 
 ## Deploy
 [Visualiza el proyecto tocando este link.](https://nitro-gym.netlify.app/)
